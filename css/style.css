@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+*{
+  margin-top: 0%;
+  padding: 0%;
+}
 *, ::before, ::after {
   box-sizing: border-box;
+ 
 }
 
+  
 body {
   font-family: 'Poppins', sans-serif;
   padding: 16px 16px 0;
@@ -22,8 +27,10 @@ a {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  border-radius: 12px;
+  width:210px;
+  height: 45px;
+  background-color: #58555e;
 }
 
 span, i {
@@ -38,6 +45,7 @@ span, i {
   width: 100%;
   background-color: #232323;
   box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
+  display: flex;
 }
 
 header .header_container {
@@ -52,6 +60,8 @@ header .search {
   padding: 7px 12px;
   background-color: #121212;
   border-radius: 4px;
+  margin-left: 30%;
+  height: 53px;
 }
 
 header input {
@@ -130,7 +140,7 @@ header .toggle {
 .logo_name i {
   font-size: 25px;
   margin-right: 10px;
-  color: #ff0000;
+  color: #df9800;
 }
 
 .nav_list,
@@ -153,7 +163,7 @@ header .toggle {
 }
 
 .nav_link:hover {
-  color: #ff0000;
+  color: #d66902;
 }
 
 .nav_icon {
@@ -200,7 +210,7 @@ header .toggle {
 }
 
 .nav_dropdown-item:hover {
-  color: #ff0000;
+  color: #eba000;
 }
 
 .nav_dropdown-icon {
