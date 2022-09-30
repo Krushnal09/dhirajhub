@@ -223,21 +223,23 @@ button {
 }
 
 @media only screen and (max-width:768px) {
+  
   .video_items {
     flex-direction: column;
   }
 
   .left, .left_content {
-    width: 750px !important;
+    width: 670px !important;
+    margin-left: -8px;
   }
 
   video {
-    width: 750px !important;
+    width: 650px !important;
     height: 40vh !important;
   }
 
   .right, .right_content {
-    width: 768px !important;
+    width: 662px !important;
     padding-right: 50px;
   }
 
@@ -252,4 +254,39 @@ button {
     height: 100%;
     object-fit: cover;
   }
+  #navbar{
+    width: 70px;
+
+  }
+ /* .nav_container{
+    width: 20px;
+
+  }*/
+  .nav:hover {
+    width: 265px;
+  }
+
+  .nav .nav_subititle,
+  .nav .logo_name,
+  .nav .nav_dropdown-icon,
+  .nav .navtop .nav_link:nth-child(4),
+  .nav .subscribe-contain {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .nav:hover .nav_subititle,
+  .nav:hover .logo_name,
+  .nav:hover .nav_dropdown-icon,
+  .nav:hover .navtop .nav_link:nth-child(4),
+  .nav:hover .subscribe-contain {
+    opacity: 1;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+ 
 }
