@@ -290,3 +290,38 @@ button {
   }
  
 }
+@media screen and (max-width:420px) {
+  #logo img{
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 140px;
+  }
+  header .search {
+    width: 20%;
+    margin-left: 10px;
+  }
+  #vid{
+    width: 350px;
+    height: 320px;
+  }
+  #left_content{
+    
+  }
+  .view-text{
+    display: none;
+  }
+  #viwer{
+    margin-left: 0%;
+    width: 30px;
+  }
+  .details flex border_bottom{
+    width: 20px;
+  }
+  #right{
+    width: 20%;
+  }
+  .right_content{
+    width: 60px;
+  }
+  }
+
