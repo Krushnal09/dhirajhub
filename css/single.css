@@ -255,7 +255,7 @@ button {
     object-fit: cover;
   }
   #navbar{
-    width: 70px;
+    width: 165px;
 
   }
  /* .nav_container{
@@ -290,7 +290,12 @@ button {
   }
  
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width:420px) { 
+  .right, .right_content{
+    width: 355px !important;
+    padding-right: 40px;
+} 
+  
   #logo img{
     margin-top: 15px;
     margin-left: 5px;
@@ -310,10 +315,6 @@ button {
   .view-text{
     display: none;
   }
-  #viwer{
-    margin-left: 0%;
-    width: 30px;
-  }
   .details flex border_bottom{
     width: 20px;
   }
@@ -321,7 +322,7 @@ button {
     width: 20%;
   }
   .right_content{
-    width: 60px;
+    width: 600px;
   }
   }
 
