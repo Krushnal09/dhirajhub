@@ -291,11 +291,17 @@ button {
  
 }
 @media screen and (max-width:420px) { 
+  #xxx{
+    width: 20%;
+  }
   .right, .right_content{
     width: 355px !important;
     padding-right: 40px;
 } 
-  
+.video_items .heading {
+  width: 40%;
+}
+
   #logo img{
     margin-top: 15px;
     margin-left: 5px;
@@ -309,9 +315,7 @@ button {
     width: 350px;
     height: 320px;
   }
-  #left_content{
-    
-  }
+  
   .view-text{
     display: none;
   }

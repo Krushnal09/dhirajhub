@@ -28,9 +28,10 @@ a {
 
 img {
   border-radius: 12px;
-  width:210px;
-  height: 45px;
+  width: 210px;
+  height: 58px;
   background-color: #58555e;
+  margin-top: 0%;
 }
 
 span, i {
@@ -321,6 +322,7 @@ header .toggle {
 .flex {
   display: flex;
 }
+
 
 /*--------------video_items------------*/
 @media screen and (min-width:768px) {
