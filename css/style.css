@@ -322,6 +322,14 @@ header .toggle {
 .flex {
   display: flex;
 }
+.viwers{
+
+  margin-left: 23px;
+}
+#count{
+  width: 60%;
+  height: 30%;
+}
 
 
 /*--------------video_items------------*/
@@ -407,7 +415,7 @@ header .toggle {
     width: 165px;
   }
   header .search {
-    width: 30%;
+    width: 35%;
     margin-left: 10%;
   }
 
