@@ -27,3 +27,20 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+@media screen and (max-width:768px) {
+  .split{
+    position: absolute;
+    width: 45%;
+  }
+  
+}
+@media screen and (max-width:420px) {
+  .body{
+    align-content: space-around;
+  }
+  .content{
+    height:20% ;
+  }
+}
