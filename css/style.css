@@ -225,7 +225,7 @@ header .toggle {
 }
 
 .nav_dropdown-item:hover {
-  color: #eba000;
+  color: rgb(235, 160, 0);
 }
 
 .nav_dropdown-icon {
