@@ -323,14 +323,23 @@ header .toggle {
   display: flex;
 }
 .viwers{
-
-  margin-left: 23px;
+  width: 86%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 23px;
+    margin-right: -85px;
+    padding: 10px;
+    padding-left: 22px;
+    border-radius: 15px;
+    background-color: #df9800;
 }
 #count{
-  width: 60%;
-  height: 30%;
+  width: 70%;
+  height: 50%;
 }
-
+#count img{
+  border: solid 20px;
+}
 
 /*--------------video_items------------*/
 @media screen and (min-width:768px) {
@@ -372,7 +381,7 @@ header .toggle {
   .nav {
     left: 0;
     padding: 19px 24px 0;
-    width: 70px;
+    width: 69px;
   }
 
   main {
