@@ -32,6 +32,7 @@ img {
   height: 58px;
   background-color: #58555e;
   margin-top: 0%;
+  
 }
 
 span, i {
@@ -329,18 +330,34 @@ header .toggle {
     justify-content: center;
     margin-left: 23px;
     margin-right: -85px;
-    padding: 10px;
+    
+    padding: 25px;
+    padding-bottom: 27px;
     padding-left: 22px;
+    border: 10% rgb(255, 0, 0);
     border-radius: 15px;
     background-color: #df9800;
 }
-#count{
-  width: 70%;
-  height: 50%;
+.count{
+  /*border: 10px  solid black;*/
+  border-radius: 12px;
+  background-color: black;
   align-items: center;
+justify-content: center;
+margin-right: 2px;
+width: 102px;
+}
+#count{
+  width: 90%;
+  height: 60%;
+  align-items: center;
+justify-content: center;
+margin-top: 10px;
+margin-left: 2px;
+
 }
 #count img{
-  border: solid black 20px;
+	border: 2opx solid rgb(216, 17, 17);
 }
 .title{
   width: 40%;
