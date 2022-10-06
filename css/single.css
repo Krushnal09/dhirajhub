@@ -330,6 +330,7 @@ button {
   }
   .right_content{
     width: 600px;
+    margin-left: -15px;
   }
   }
 
