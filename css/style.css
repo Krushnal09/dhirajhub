@@ -363,6 +363,27 @@ margin-left: 2px;
   width: 40%;
 
 }
+.footer{
+  margin-bottom: 10px;
+  height: 50px;
+  width: 100%;
+	background-color: #d66902;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	flex-direction: column;
+  border-radius:9px;
+
+}
+.footer a{
+  text-decoration: none;
+  color:white;
+  list-style: none;
+}
+.footer a:hover{
+  color: #48ff00;
+}
 /*--------------video_items------------*/
 @media screen and (min-width:768px) {
   body {
