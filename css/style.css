@@ -200,7 +200,15 @@ header .toggle {
   letter-spacing: 1px;
   color: #a5a1aa;
 }
-
+.msg{
+  margin-left: 12%;
+  text-decoration:none;
+   list-style: none;
+   color:white ;
+}
+.msg li:hover{
+  color: #df9800;
+}
 /*----------nav_dropdown  */
 .nav_dropdown {
   overflow: hidden;
@@ -491,6 +499,10 @@ margin-left: 2px;
   .title{
     width: 90%;
     font-size: 70%;
+  }
+  .msg{
+    width: 172px;
+    font-size: 13px;
   }
 }
 
