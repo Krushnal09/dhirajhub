@@ -25,3 +25,4 @@ KRUSHNAL PATIL
 ![Logo](https://Krushnal09.cf/IMG/preview(2).png)
 
 
+![Logo](https://instagram.com/krushnal_09)
