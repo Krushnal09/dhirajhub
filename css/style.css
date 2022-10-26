@@ -57,7 +57,15 @@ header .header_container {
   justify-content: space-between;
   height: 56px;
 }
+#logo img{
+  border-radius: 4px;
+  
+}
 
+#logo{
+  justify-content: center;
+  align-items: center;
+}
 header .search {
   display: flex;
   padding: 7px 12px;
