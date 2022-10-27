@@ -1,4 +1,3 @@
-
 .left {
   width: 1000px;
   color: #fff;
@@ -224,12 +223,13 @@ button {
 }
 
 @media only screen and (max-width:768px) {
-  
+
   .video_items {
     flex-direction: column;
   }
 
-  .left, .left_content {
+  .left,
+  .left_content {
     width: 670px !important;
     margin-left: -8px;
   }
@@ -239,7 +239,8 @@ button {
     height: 40vh !important;
   }
 
-  .right, .right_content {
+  .right,
+  .right_content {
     width: 662px !important;
     padding-right: 50px;
   }
@@ -255,11 +256,13 @@ button {
     height: 100%;
     object-fit: cover;
   }
-  #navbar{
+
+  #navbar {
     width: 165px;
 
   }
- /* .nav_container{
+
+  /* .nav_container{
     width: 20px;
 
   }*/
@@ -289,54 +292,66 @@ button {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
- 
-}
-@media screen and (max-width:420px) { 
-  #left #left_content{
-    width: 300px;
-  }
-  #xxx{
-    width: 90%;
-  }
-  .right, .right_content{
-    width: 355px !important;
-    padding-right: 40px;
-} 
-.video_items .heading {
-  width: 40%;
+
 }
 
-  #logo img{
-    margin-top: 15px;
-    margin-left: 5px;
-    width: 140px;
+@media screen and (max-width:420px) {
+  body{
+  padding: 16px 8px 0;
   }
-  header .search {
-    width: 20%;
-    margin-left: 10px;
-  }
+
   .header {
     padding-top: 2%;
-    height: 6%;
-    width: 130%;
-}
-  #vid{
+    height: 9%;
+    width: 165%;
+  }
+
+  #logo img {
+    margin-top: 15px;
+    margin-left: 12px;
+    width: 150px;
+  }
+
+  header .search {
+    width: 19%;
+    margin: 6px 0 0 10px;
+  }
+  .left,
+  .left_content {
+    width: 348px !important;
+    margin-left: -8px;
+  }
+
+/* #left #left_content {
+    width: 300px;
+  }
+*/
+  #xxx {
+    width: 90%;
+  }
+
+  .right,
+  .right_content {
+    width: 337px !important;
+    
+  }
+
+  .video_items .heading {
+    width: 97%;
+  }
+
+  #vid {
     width: 350px;
     height: 320px;
   }
-  
-  .view-text{
+
+  .view-text {
     display: none;
   }
-  .details flex border_bottom{
+
+  .details flex border_bottom {
     width: 20px;
   }
-  #right{
-    width: 20%;
-  }
-  .right_content{
-    width: 600px;
-    margin-left: -15px;
-  }
-  }
 
+ 
+}
