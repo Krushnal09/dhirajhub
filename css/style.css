@@ -65,6 +65,7 @@ header .header_container {
 
 #logo img {
   border-radius: 4px;
+  height: 150%;
 
 }
 
@@ -419,7 +420,11 @@ header .toggle {
 }
 
 .footer a:hover {
-  color: #48ff00;
+  color:#d66902;
+
+}
+.footer:hover{
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .pagination ul {
@@ -513,7 +518,7 @@ ul {
   }
 
   main {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-left: 0;
   }
 
@@ -556,7 +561,7 @@ ul {
   }
 
   #logo img {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 5px;
     width: 165px;
   }

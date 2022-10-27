@@ -221,6 +221,27 @@ button {
   font-size: 13px;
   margin: 0;
 }
+.more{
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: 145px;
+  margin-bottom: 5px;
+  background-color: #d66902;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-more{
+  color: white;
+}
+.btn-more:hover{
+  color: #d66902;
+}
 
 @media only screen and (max-width:768px) {
 
@@ -292,6 +313,10 @@ button {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
+  .more{
+    margin-top: 10px;
+    margin-left: 270px;
+  }
 
 }
 
@@ -302,7 +327,7 @@ button {
 
   .header {
     padding-top: 2%;
-    height: 9%;
+    height: 10%;
     width: 165%;
   }
 
@@ -310,6 +335,7 @@ button {
     margin-top: 15px;
     margin-left: 12px;
     width: 150px;
+    
   }
 
   header .search {
@@ -352,6 +378,11 @@ button {
   .details flex border_bottom {
     width: 20px;
   }
+  .more{
+    margin-top: 15px;
+    margin-left: 95px;
+  }
+
 
  
 }
