@@ -65,7 +65,7 @@ header .header_container {
 
 #logo img {
   border-radius: 4px;
-  height: 150%;
+  height: 140%;
 
 }
 
@@ -306,9 +306,11 @@ header .toggle {
 /*----------nav_dropdown   */
 /*--------------nav------------*/
 /*--------------video_items------------*/
+
 .video_items video {
   width: 295px;
   height: 170px;
+
 }
 
 .video_items a img {
@@ -482,6 +484,12 @@ ul {
 
   header {
     padding: 0 48px 0 80px;
+    
+  }
+  .header{
+    height: 9%;
+    width: 100%;
+
   }
 
   header .header_container {

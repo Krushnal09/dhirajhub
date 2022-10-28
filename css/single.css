@@ -278,10 +278,12 @@ button {
     object-fit: cover;
   }
 
-  #navbar {
-    width: 165px;
-
+  .nav {
+    left: 0;
+    padding: 19px 24px 0;
+    width: 69px;
   }
+
 
   /* .nav_container{
     width: 20px;
@@ -313,10 +315,14 @@ button {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
+  #vid{
+    width: 100%;
+  }
   .more{
     margin-top: 10px;
     margin-left: 270px;
   }
+
 
 }
 
