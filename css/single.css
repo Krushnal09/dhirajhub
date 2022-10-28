@@ -277,19 +277,19 @@ button {
     height: 100%;
     object-fit: cover;
   }
-
+/*
   .nav {
     left: 0;
     padding: 19px 24px 0;
     width: 69px;
   }
-
+*/
 
   /* .nav_container{
     width: 20px;
 
   }*/
-  .nav:hover {
+/*  .nav:hover {
     width: 265px;
   }
 
@@ -309,7 +309,7 @@ button {
   .nav:hover .subscribe-contain {
     opacity: 1;
   }
-
+*/
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
