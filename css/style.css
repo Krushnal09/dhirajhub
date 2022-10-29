@@ -132,24 +132,26 @@ header .toggle {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 
-.wrapper{
-  max-width: 450px;
+.wrapper {
+  width: 100px;
   margin-top: 12px;
-  margin-left: 30%;
-  
+  margin-left: 20%;
+
 }
 
-.wrapper .search-input{
+.wrapper .search-input {
   background: #1c1c1c;
- 
+
 
   position: relative;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
 }
-.search-input{
+
+.search-input {
   width: 250px;
 }
-.search-input input{
+
+.search-input input {
   height: 40px;
   width: 100%;
   outline: none;
@@ -157,14 +159,15 @@ header .toggle {
   border-radius: 5px;
   padding: 0 60px 0 20px;
   font-size: 18px;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  color: #d66902;
 }
 
-.search-input.active input{
+.search-input.active input {
   border-radius: 5px 5px 0 0;
 }
 
-.search-input .autocom-box{
+.search-input .autocom-box {
   padding: 0;
   opacity: 0;
   pointer-events: none;
@@ -172,28 +175,31 @@ header .toggle {
   overflow-y: auto;
 }
 
-.search-input.active .autocom-box{
+.search-input.active .autocom-box {
   padding: 10px 8px;
   opacity: 1;
   pointer-events: auto;
 }
 
-.autocom-box li{
+.autocom-box li {
   list-style: none;
   padding: 8px 12px;
   display: none;
   width: 100%;
   cursor: default;
   border-radius: 3px;
+  color: #d66902;
 }
 
-.search-input.active .autocom-box li{
+.search-input.active .autocom-box li {
   display: block;
 }
-.autocom-box li:hover{
+
+.autocom-box li:hover {
   background: #58555e;
 }
-.search-input .icon{
+
+.search-input .icon {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -205,6 +211,7 @@ header .toggle {
   color: #644bff;
   cursor: pointer;
 }
+
 /*-------------------header------------*/
 /*--------------nav------------*/
 .nav {
@@ -592,6 +599,12 @@ ul {
     order: 1;
   }
 
+  .wrapper {
+
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+
   .nav .nav_items {
     row-gap: 27px;
   }
@@ -651,16 +664,31 @@ ul {
     width: 165px;
   }
 
-  header .search {
-    width: 35%;
-    margin-left: 10%;
-  }
+
 
   /* header .none,
   header .user {
     display: none;
   }*/
+  .wrapper {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+.search-input input {
+  margin-left: 5px;
+  width: 115px;
+  padding: 0 0px 0 5px;
+}
 
+
+  .search-input {
+    width: 125px;
+}
+  .toggle {
+    margin: 10px;
+    margin-left: 95px;
+}
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
