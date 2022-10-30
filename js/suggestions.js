@@ -19,5 +19,6 @@ let suggestions = [
     "movie",
     "solo",
     "ownerschoice",
+    "mia-khalifa",
    
 ];

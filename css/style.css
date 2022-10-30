@@ -301,15 +301,20 @@ header .toggle {
   letter-spacing: 1px;
   color: #a5a1aa;
 }
+.msg li  {
+ 
+  text-decoration: none;
+  list-style: none;
 
-.msg {
+}
+.msg li a {
   margin-left: 12%;
   text-decoration: none;
   list-style: none;
   color: white;
 }
 
-.msg li:hover {
+.msg li a:hover {
   color: #df9800;
 }
 
