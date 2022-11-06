@@ -109,19 +109,20 @@ body {
     }
     .card{
         box-shadow: none;
+        height: 410px
        
     }
     #right{
-        margin-top: 435px;
+        margin-top: 505px;
         display: flex;
         flex-direction: column;
         left: 60px;
         margin-bottom:10% ;
-    height: 60%;
+    height: 62%;
     }
     #left{
         left: 60px;
-        top: -160px;
+        top: -133px;
       
     }
     .split{
