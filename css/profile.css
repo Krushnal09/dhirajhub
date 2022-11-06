@@ -1,4 +1,8 @@
 /* Split the screen in half */
+.dabbe{
+  display: flex;
+  flex-direction: column;
+}
 .split {
   height: 100%;
   width: 60%;
@@ -21,7 +25,8 @@
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-  position: absolute;
+ position: absolute;
+ 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

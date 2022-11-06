@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +10,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#03a9f4, #03a9f4 45%, #fff 45%, #fff 100%);
-}  
+    background: linear-gradient(#ff512f, #dd2476 45%, #fff 45%, #fff 100%);
+} 
+
 .card {
     position: relative;
     width: 300px;
@@ -92,3 +94,4 @@ body {
     background: #03a9f4;
     color: #fff;
 }
+*/

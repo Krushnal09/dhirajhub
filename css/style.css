@@ -498,6 +498,7 @@ header .toggle {
   width: 100%;
   background-color: #d66902;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
