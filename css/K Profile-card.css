@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 150vh;
-    background: linear-gradient(#ff512f , #dd2476 50%,#ff2a00 90%);
+    background: linear-gradient(#ff512f , #dd2476 50%,#2cddf5 90%,#0052d4,#035ef0 106%);
 }  
 .card {
     position: relative;
@@ -66,7 +66,7 @@ body {
 }
 .content .detail h2 span {
     font-size: 0.7em;
-    color:  #03a9f4;
+    color: yellow;
     font-weight: bold;
 }.sci {
     position: relative;
@@ -92,7 +92,7 @@ body {
     transition: 0.5s;
 }
 .sci li a:hover {
-    background: #03a9f4;
+    background: #d66902;
     color: #fff;
 }
 @media screen and (min-width:768px) {

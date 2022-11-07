@@ -204,7 +204,7 @@ header .toggle {
 .search-input .icon {
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: -2px;
   height: 55px;
   width: 55px;
   text-align: center;
