@@ -181,8 +181,13 @@ button {
   padding: 10px;
   width: 100%;
   color: #fff;
+  
 }
+.chat h2{
+  font-size: 15px;
+  padding-top: 5px;
 
+}
 .tags-bg {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
