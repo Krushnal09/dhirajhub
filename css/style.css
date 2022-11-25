@@ -398,6 +398,25 @@ header .toggle {
 /*----------nav_dropdown   */
 /*--------------nav------------*/
 /*--------------video_items------------*/
+
+/*-------banner------*/
+
+.banner{
+  
+  height: 145px;
+  width: 98%;
+  background-color: grey;
+  border-radius: 8px;
+}
+
+
+
+
+/*-------banner------*/
+
+main{
+  margin-top: 45px;
+}
 .video_items {
   margin-bottom: 20px;
 }
