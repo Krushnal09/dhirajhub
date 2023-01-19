@@ -659,5 +659,13 @@
   <!--infolinks-->
   <script type="text/javascript"> var infolinks_pid = 3380141; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
+<script type="text/javascript">
+        var divs = $("div.video_items").get().sort(function(){
 
-</html>
+return Math.round(Math.random())-0.23; 
+
+ }).slice(0,22);
+
+$(divs).appendTo(divs[0].parentNode).show();
+</script>
+  </html>
