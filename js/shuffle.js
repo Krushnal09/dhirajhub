@@ -4,7 +4,7 @@ return Math.round(Math.random())-0.23;
 
  }).slice(0,22);
 
-$(divs).show();
+$(divs).appendTo(divs[0].parentNode).show();
 
 
 
