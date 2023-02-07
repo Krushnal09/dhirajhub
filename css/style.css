@@ -834,7 +834,10 @@ ul {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 10px;
   }
-
+. banner iframe{
+    height: 12% ;
+    width:200px ;
+  }
   main {
     padding-top: 20px;
     padding-left: 20px;
