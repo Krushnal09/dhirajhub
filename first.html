@@ -14,7 +14,7 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
 	<link href="./css/all-responsive-white.css?v=7.3" rel="stylesheet" type="text/css" />
 	<link href="./css/jquery.fancybox-white.css?v=7.3" rel="stylesheet" type="text/css" />
 	<link href="./css/all-responsive-white.css@v=7.css" rel="stylesheet" type="text/css" />
@@ -58,14 +58,14 @@
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<a href="/HubX-main/index.html"><img src="./images/logo.jpeg" width="130" height="43" alt="hubX"></a>
+				<a href="/"><img src="./images/logo.jpeg" width="130" height="43" alt=""></a>
 			</div>
 			<div class="social-bookmarks">
 				<!-- AddThis Button BEGIN -->
 				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 					<div class="member-logs">
-						<a href="" data-fancybox="ajax" id="login">Login</a>
-						<a href="" data-fancybox="ajax">Sign Up</a>
+						<a data-href="" data-fancybox="ajax" id="login">Login</a>
+						<a data-href="" data-fancybox="ajax">Sign Up</a>
 					</div>
 
 				</div>
@@ -78,24 +78,29 @@
 				<!-- AddThis Button END -->
 			</div>
 			<div class="search">
-				<form id="search_form" action="" method="get" data-url="">
-					<span id="search-open"><i></i></span>
-					<span class="search-button">Search</span>
-					<div class="search-text"><input type="text" name="q" placeholder="Search" value="" /><span
-							id="search-toggle"><i class="cross"></i></span></div>
-				</form>
-
+				<div class="wrapper">
+					<div class="search-input">
+					  <a href="" target="_blank" hidden></a>
+					  <input type="text" placeholder="Search..">
+					  <div class="autocom-box">
+						<!-- here list are inserted from javascript -->
+					  </div>
+					  <div class="icon"><i class="fas fa-search"></i></div>
+					</div>
+				  </div>
+			  
+				  <script src="/js/suggestions.js"></script>
+				  <script src="/js/script.js"></script>
+				  <script src="/js/jQuery.js"></script>
+			  
+				<!--
 				<span class="uploads ">
 
-					<i></i>
-
-
-
-					<a href="">Upload</a>
-
+					<i class="fa-solid fa-up-from-bracket"></i> <a href="">Upload</a>
 
 
 				</span>
+				-->
 				<div class="container-switcher">
 					<div class="round">
 						<input type="checkbox" id="checkbox" />
@@ -106,51 +111,65 @@
 			</div>
 		</div>
 
-		<nav>
-			<div class="navigation">
-				<button class="button">
-					<span class="icon">
-						<span class="ico-bar"></span>
-						<span class="ico-bar"></span>
-						<span class="ico-bar"></span>
-					</span>
-				</button>
-				<ul class="primary">
-					<li>
-						<div class="mobile-menu-auto"><a href="" data-fancybox="ajax"><i class="loginIcon"></i><span>Log
-									in</span></a><a href="" data-fancybox="ajax"><i class="registerIcon"></i><span>Sign
-									up</span></a><a data-href="" data-fancybox="ajax"><i
-									class="uploadBtn"></i><span>Upload</span></a></div>
-					</li>
-					<li class="main-list-menu"><span>MAIN</span></li>
-					<li>
-						<i class="list-0"></i>
-						<a href="" id="item1">Home</a>
-					</li>
-					<li>
-						<i class="list-1"></i>
-						<a href="" id="item2">Latest</a>
-					</li>
-					<li>
-						<i class="list-3"></i>
-						<a href="" id="item6">Categories</a>
-					</li>
-
-					<li>
-						<i class="list-6"></i>
-						<a href="" id="item11">About Us</a>
-					</li>
-					<li class="highlight ">
-
-						<i class="list-7"></i>
-						<a href="" data-fancybox="ajax">Upload</a>
-					</li>
-					<li class="switch-mobile"></li>
-				</ul>
-				<ul class="secondary">
-				</ul>
-			</div>
-		</nav>
+		
+			<nav>
+				<div class="navigation">
+					<button class="button">
+						<span class="icon">
+							<span class="ico-bar"></span>
+							<span class="ico-bar"></span>
+							<span class="ico-bar"></span>
+						</span>
+					</button>
+					<ul class="primary">
+						<li>
+							<div class="mobile-menu-auto"><a href="" data-fancybox="ajax"><i class="loginIcon"></i><span>Log
+										in</span></a><a href="" data-fancybox="ajax"><i class="registerIcon"></i><span>Sign
+										up</span></a><a data-href="" data-fancybox="ajax"><i
+										class="uploadBtn"></i><span>Upload</span></a></div>
+						</li>
+						<li class="main-list-menu"><span>MAIN</span></li>
+						<li class="selected">
+							<i class="list-0"></i>
+							<a href="" id="item1">Home</a>
+						</li>
+						
+						
+						<!--
+						<li>
+							<i class="list-2"></i>
+							<a href="" id="item3">Most Popular</a>
+						</li>
+					
+	
+	
+						
+	
+						<li>
+							<i class="list-4"></i>
+							<a href="" id="item8">Pornstars</a>
+						</li>
+						<li>
+							<i class="list-5"></i>
+							<a href="" id="item10">Channels</a>
+						</li>
+						-->
+						<li>
+							<i class="list-3"></i>
+							<a href="" id="item6">Categories</a>
+						</li>
+						<li>
+							<i class="list-6"></i>
+							<a href="" id="item11">About Us</a>
+						</li>
+						
+						<li class="switch-mobile"></li>
+					</ul>
+					<ul class="secondary">
+					</ul>
+				</div>
+			</nav>
+	
 		<!-------------Mobile--->
 		<div class="top-links-mobile">
 			<div class="center-hold">
@@ -185,16 +204,13 @@
 			<div class="block-video">
 				<div class="table">
 					<div class="opt">
-						<a href="" rel="nofollow" title="Visit our sponsor"><img
-								src="/static/images/sample/sample-300x250.jpg" /></a>
+						<a href="" rel="nofollow" title="Visit our sponsor"></a>
 					</div>
 					<div class="opt">
-						<a href="" rel="nofollow" title="Visit our sponsor"><img
-								src="/static/images/sample/sample-300x250.jpg" /></a>
+						<a href="" rel="nofollow" title="Visit our sponsor"></a>
 					</div>
 					<div class="opt">
-						<a href="" rel="nofollow" title="Visit our sponsor"><img
-								src="/static/images/sample/sample-300x250.jpg" /></a>
+						<a href="" rel="nofollow" title="Visit our sponsor"></a>
 					</div>
 				</div>
 				<div class="video-holder">
@@ -204,7 +220,9 @@
 							<div class="player-wrap" style="width: 100%; height: 0; padding-bottom: 50.704225352113%">
 								<div id="kt_player">
 									<video width="100%" height="100%" controls>
-										<source src="videos/Dhirajhub.mp4">
+										<source src="https://firebasestorage.googleapis.com/v0/b/dhirajhub-699.appspot.com/o/VID-20230113-WA0008.mp4?alt=media&token=04d44986-c7e9-43be-b947-124794f3b714" type="video/mp4">
+
+  
 									</video>
 								</div>
 							</div>
@@ -221,10 +239,9 @@
 								<div class="rating-container">
 									<a href="#like" class="rate-like" title="I like this video" data-video-id="41"
 										data-vote="5">I like this video</a><span class="like-span">Like</span>
-									<a href="#dislike" class="rate-dislike" title="I don't like this video"
-										data-video-id="41" data-vote="0">I don't like this video</a>
-
+									
 								</div>
+								<!--
 								<div class="btn-favourites">
 									<a class="drop" title="Add to Favourites">
 										<span class="ico-favourite"></span>
@@ -234,14 +251,14 @@
 										<li><a href="" data-fancybox="ajax">Watch Later</a></li>
 										<li><a href="" data-fancybox="ajax">Add to New Playlist...</a></li>
 									</ul>
-								</div>
+								</div>-->
 								<div class="tabs-menu">
 									<ul>
 										<li><a href="#tab_video_info" class="toggle-button">About</a></li>
-										<li><a href="#tab_report_rrror" class="toggle-button">Report Video</a></li>
+									
 										<li><a href="#tab_screenshots" class="toggle-button">Screenshots</a></li>
 										<li><a href="#tab_share" class="toggle-button">Share</a></li>
-										<li><a href="#tab_comments" class="toggle-button">Comments (1)</a></li>
+										
 									</ul>
 								</div>
 							</div>
@@ -375,6 +392,7 @@
 									</form>
 								</div>
 							</div>
+							<!--
 							<div id="tab_comments" class="tab-content hidden">
 
 								<div class="block-comments" data-block-id="video_comments_video_comments">
@@ -532,7 +550,7 @@
 								</div>
 
 
-							</div>
+							</div>-->
 						</div>
 
 
@@ -545,10 +563,7 @@
 				<ul class="list-sort" id="list_videos_related_videos_filter_list">
 					<li><span>Related Videos</span></li>
 
-					<li><a data-action="ajax" data-container-id="list_videos_related_videos_filter_list"
-							data-block-id="list_videos_related_videos" data-parameters="mode_related:4">More Videos with
-							Amani Wett</a></li>
-
+					
 				</ul>
 				<script>
 
@@ -602,98 +617,7 @@
 					<div class="list-videos">
 						<div class="adv-home"><span>Adv</span></div>
 						<div class="margin-fix" id="list_videos_related_videos_items">
-							<div class="item private ">
-								<a href="" title="Горлового Минета 33">
-
-									<div class="img">
-
-										<img class="thumb " src="/static/images/black-screen.jpg"
-											alt="Горлового Минета 33" width="320" height="180" />
-
-
-
-										<span class="line-private"><span class="ico-private">Private</span></span>
-										<span class="mobile-line"></span>
-										<span class="ico-fav-01 " title="" data-fav-video-id="4247"
-											data-fav-type=""></span>
-										<span class="ico-fav-0 " title="" data-fav-video-id="4247" data-fav-type="">
-											<div class="icons"></div>
-										</span>
-
-									</div>
-
-									<strong class="title">
-										Горлового Минета 33
-									</strong>
-									<div class="wrap">
-										<div class="username">
-											<a href="">
-
-
-											</a>
-										</div>
-
-
-										<div class="added"><em>Added: 1 year ago</em></div>
-
-									</div>
-									<div class="wrap">
-										<div class="views"><span class="count">8 064</span> views</div>
-										<div class="rating positive">
-											<div class="ico-rating"></div>
-											100%
-										</div>
-
-									</div>
-								</a>
-							</div>
-							<div class="item private ">
-								<a href="" title="Горлового Минета 185">
-
-									<div class="img">
-
-										<img class="thumb " src="/static/images/black-screen.jpg"
-											alt="Горлового Минета 185" width="320" height="180" />
-
-
-
-										<span class="line-private"><span class="ico-private">Private</span></span>
-										<span class="mobile-line"></span>
-										<span class="ico-fav-01 " title="" data-fav-video-id="6739"
-											data-fav-type=""></span>
-										<span class="ico-fav-0 " title="" data-fav-video-id="6739" data-fav-type="">
-											<div class="icons"></div>
-										</span>
-
-										<span class="is-hd">HD</span>
-										<div class="duration-time">55:30</div>
-									</div>
-
-									<strong class="title">
-										Горлового Минета 185
-									</strong>
-									<div class="wrap">
-										<div class="username">
-											<a href="">
-
-
-											</a>
-										</div>
-
-
-										<div class="added"><em>Added: 1 year ago</em></div>
-
-									</div>
-									<div class="wrap">
-										<div class="views"><span class="count">6 109</span> views</div>
-										<div class="rating positive">
-											<div class="ico-rating"></div>
-											100%
-										</div>
-
-									</div>
-								</a>
-							</div>
+							
 
 							<div class="item  ">
 								<a href="" title="FACIAL ABUSE - Richard Maddow">
@@ -742,55 +666,9 @@
 									</div>
 								</a>
 							</div>
-							<div class="item private ">
-								<a href="" title="Горлового Минета 57">
-
-									<div class="img">
-
-										<img class="thumb " src="/static/images/black-screen.jpg"
-											alt="Горлового Минета 57" width="320" height="180" />
-
-
-
-										<span class="line-private"><span class="ico-private">Private</span></span>
-										<span class="mobile-line"></span>
-										<span class="ico-fav-01 " title="" data-fav-video-id="4796"
-											data-fav-type=""></span>
-										<span class="ico-fav-0 " title="" data-fav-video-id="4796" data-fav-type="">
-											<div class="icons"></div>
-										</span>
-
-										<span class="is-hd">HD</span>
-										<div class="duration-time">1:00:48</div>
-									</div>
-
-									<strong class="title">
-										Горлового Минета 57
-									</strong>
-									<div class="wrap">
-										<div class="username">
-											<a href="">
-
-
-											</a>
-										</div>
-
-
-										<div class="added"><em>Added: 1 year ago</em></div>
-
-									</div>
-									<div class="wrap">
-										<div class="views"><span class="count">5 844</span> views</div>
-										<div class="rating positive">
-											<div class="ico-rating"></div>
-											100%
-										</div>
-
-									</div>
-								</a>
-							</div>
+							
 							<div class="item  ">
-								<a href=" title=" LATINA ABUSE - Dani">
+								<a href="" title=" LATINA ABUSE - Dani">
 
 									<div class="img">
 

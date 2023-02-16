@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Pornhub</title>
+	<title>DHIRAJHUBS</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,6 +12,7 @@
 
 	<link href="./css/all-responsive-white.css@v=7.css" rel="stylesheet" type="text/css" />
 	<link href="./css/jquery.fancybox-white.css@v=7.css" rel="stylesheet" type="text/css" />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
 	<script>
 		var pageContext = {
 			loginUrl: 'login-required/'
@@ -75,7 +76,7 @@
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<a href=""><img src="./images/logo.jpeg" width="130" height="43" alt=""></a>
+				<a href="/"><img src="./images/logo.jpeg" width="130" height="43" alt=""></a>
 			</div>
 			<div class="social-bookmarks">
 				<!-- AddThis Button BEGIN -->
@@ -95,13 +96,21 @@
 				<!-- AddThis Button END -->
 			</div>
 			<div class="search">
-				<form id="search_form" action="" method="get" data-url="">
-					<span id="search-open"><i></i></span>
-					<span class="search-button">Search</span>
-					<div class="search-text"><input type="text" name="q" placeholder="Search" value="" /><span
-							id="search-toggle"><i class="cross"></i></span></div>
-				</form>
-
+				<div class="wrapper">
+					<div class="search-input">
+					  <a href="" target="_blank" hidden></a>
+					  <input type="text" placeholder="Search..">
+					  <div class="autocom-box">
+						<!-- here list are inserted from javascript -->
+					  </div>
+					  <div class="icon"><i class="fas fa-search"></i></div>
+					</div>
+				  </div>
+			  
+				  <script src="/js/suggestions.js"></script>
+				  <script src="/js/script.js"></script>
+				  <script src="/js/jQuery.js"></script>
+			  
 				<!--
 				<span class="uploads ">
 
@@ -141,14 +150,8 @@
 						<i class="list-0"></i>
 						<a href="" id="item1">Home</a>
 					</li>
-					<li>
-						<i class="list-1"></i>
-						<a href="" id="item2">Latest</a>
-					</li>
-					<li>
-						<i class="list-3"></i>
-						<a href="" id="item6">Categories</a>
-					</li>
+					
+					
 					<!--
 					<li>
 						<i class="list-2"></i>
@@ -169,14 +172,14 @@
 					</li>
 					-->
 					<li>
+						<i class="list-3"></i>
+						<a href="" id="item6">Categories</a>
+					</li>
+					<li>
 						<i class="list-6"></i>
 						<a href="" id="item11">About Us</a>
 					</li>
-					<li class="highlight ">
-
-						<i class="list-7"></i>
-						<a data-href="" data-fancybox="ajax">Upload</a>
-					</li>
+					
 					<li class="switch-mobile"></li>
 				</ul>
 				<ul class="secondary">
@@ -288,12 +291,11 @@
 							<!--------------------------------->
 							<div class="margin-fix" id="list_videos_videos_watched_right_now_items">
 								<div class="item  ">
-									<a href="/videoweb/video1">
+									<a href="/first.html">
 
 										<div class="img">
 
-											<img src="images/THUMBNAILS/01.jpg" 
-											 width="320" height="180" />
+											<img src="images/THUMBNAILS/01.jpg" width="320" height="180" />
 
 
 
