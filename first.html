@@ -14,11 +14,24 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<link href="./css/style.css" rel="stylesheet" type="text/css" />
-	<link href="./css/all-responsive-white.css?v=7.3" rel="stylesheet" type="text/css" />
-	<link href="./css/jquery.fancybox-white.css?v=7.3" rel="stylesheet" type="text/css" />
+	
+
+
+	<script src="https://kit.fontawesome.com/c2614694fb.js" crossorigin="anonymous"></script>
+	
+
 	<link href="./css/all-responsive-white.css@v=7.css" rel="stylesheet" type="text/css" />
 	<link href="./css/jquery.fancybox-white.css@v=7.css" rel="stylesheet" type="text/css" />
+	
+
+<script src="./js/jQuery.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/main.min.js@v=7.3"></script>
+
+	<link href="./css/all-responsive-white.css?v=7.3" rel="stylesheet" type="text/css" />
+	<link href="./css/jquery.fancybox-white.css?v=7.3" rel="stylesheet" type="text/css" />
+
+	
 	<script>
 		var pageContext = {
 			videoId: '41',
@@ -57,7 +70,7 @@
 
 	<div class="container">
 		<div class="header">
-			<div class="logo">
+			<div class="logo" id="logo">
 				<a href="/"><img src="./images/logo.jpeg" width="130" height="43" alt=""></a>
 			</div>
 			<div class="social-bookmarks">
@@ -78,29 +91,7 @@
 				<!-- AddThis Button END -->
 			</div>
 			<div class="search">
-				<div class="wrapper">
-					<div class="search-input">
-					  <a href="" target="_blank" hidden></a>
-					  <input type="text" placeholder="Search..">
-					  <div class="autocom-box">
-						<!-- here list are inserted from javascript -->
-					  </div>
-					  <div class="icon"><i class="fas fa-search"></i></div>
-					</div>
-				  </div>
-			  
-				  <script src="/js/suggestions.js"></script>
-				  <script src="/js/script.js"></script>
-				  <script src="/js/jQuery.js"></script>
-			  
-				<!--
-				<span class="uploads ">
-
-					<i class="fa-solid fa-up-from-bracket"></i> <a href="">Upload</a>
-
-
-				</span>
-				-->
+				
 				<div class="container-switcher">
 					<div class="round">
 						<input type="checkbox" id="checkbox" />
@@ -111,65 +102,63 @@
 			</div>
 		</div>
 
-		
-			<nav>
-				<div class="navigation">
-					<button class="button">
-						<span class="icon">
-							<span class="ico-bar"></span>
-							<span class="ico-bar"></span>
-							<span class="ico-bar"></span>
-						</span>
-					</button>
-					<ul class="primary">
-						<li>
-							<div class="mobile-menu-auto"><a href="" data-fancybox="ajax"><i class="loginIcon"></i><span>Log
-										in</span></a><a href="" data-fancybox="ajax"><i class="registerIcon"></i><span>Sign
-										up</span></a><a data-href="" data-fancybox="ajax"><i
-										class="uploadBtn"></i><span>Upload</span></a></div>
-						</li>
-						<li class="main-list-menu"><span>MAIN</span></li>
-						<li class="selected">
-							<i class="list-0"></i>
-							<a href="" id="item1">Home</a>
-						</li>
-						
-						
-						<!--
-						<li>
-							<i class="list-2"></i>
-							<a href="" id="item3">Most Popular</a>
-						</li>
+		<nav>
+			<div class="navigation">
+				<button class="button">
+					<span class="icon">
+						<span class="ico-bar"></span>
+						<span class="ico-bar"></span>
+						<span class="ico-bar"></span>
+					</span>
+				</button>
+				<ul class="primary">
+					<li>
+						<div class="mobile-menu-auto"><a href="" data-fancybox="ajax"><i class="loginIcon"></i><span>Log
+									in</span></a><a href="" data-fancybox="ajax"><i class="registerIcon"></i><span>Sign
+									up</span></a><a data-href="" data-fancybox="ajax"><i
+									class="uploadBtn"></i><span>Upload</span></a></div>
+					</li>
+					<li class="main-list-menu"><span>MAIN</span></li>
+					<li class="selected">
+						<i class="list-0"></i>
+						<a href="" id="item1">Home</a>
+					</li>
 					
-	
-	
-						
-	
-						<li>
-							<i class="list-4"></i>
-							<a href="" id="item8">Pornstars</a>
-						</li>
-						<li>
-							<i class="list-5"></i>
-							<a href="" id="item10">Channels</a>
-						</li>
-						-->
-						<li>
-							<i class="list-3"></i>
-							<a href="" id="item6">Categories</a>
-						</li>
-						<li>
-							<i class="list-6"></i>
-							<a href="" id="item11">About Us</a>
-						</li>
-						
-						<li class="switch-mobile"></li>
-					</ul>
-					<ul class="secondary">
-					</ul>
-				</div>
-			</nav>
-	
+					
+					<!--
+					<li>
+						<i class="list-2"></i>
+						<a href="" id="item3">Most Popular</a>
+					</li>
+				
+
+
+					
+
+					<li>
+						<i class="list-4"></i>
+						<a href="" id="item8">Pornstars</a>
+					</li>
+					<li>
+						<i class="list-5"></i>
+						<a href="" id="item10">Channels</a>
+					</li>
+					-->
+					<li>
+						<i class="list-3"></i>
+						<a href="" id="item6">Categories</a>
+					</li>
+					<li>
+						<i class="list-6"></i>
+						<a href="" id="item11">About Us</a>
+					</li>
+					
+					<li class="switch-mobile"></li>
+				</ul>
+				<ul class="secondary">
+				</ul>
+			</div>
+		</nav>
 		<!-------------Mobile--->
 		<div class="top-links-mobile">
 			<div class="center-hold">

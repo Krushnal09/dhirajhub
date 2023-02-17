@@ -22,7 +22,7 @@
 .container-switcher{
   margin-left: 469px;
   margin-top: 15px;
-  position: fixed;
+  position: relative;
   display: inline-block;
 }
 .container-switcher span{
@@ -183,7 +183,7 @@ a * {
 
 html {
   height: 100%;
-  background: #ffffff;
+  /*background: #ffffff;*/
   font-size: 62.5%;
 }
 body {
@@ -1248,6 +1248,7 @@ i{
   -ms-flex-order: 1;
   order: 1;
   -webkit-box-flex: 0;
+  padding-top: 10px;
 }
 .logo a {
   display: block;
@@ -6944,6 +6945,7 @@ flex: 0 1 320px;
   .info-buttons {
     margin: 0 0 1rem;
   }
+  
 }
 @media screen and (max-width: 1140px) {
   .place {
@@ -7059,6 +7061,7 @@ flex: 0 1 320px;
   }
 
   .header {
+    height: 71px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -7085,8 +7088,8 @@ flex: 0 1 320px;
   }
   .container-switcher {
     margin-left: 269px;
-    margin-top: 15px;
-    position: fixed;
+    margin-top: -49px;
+    position: RE;
     display: inline-block;
 }
   .logo {
@@ -7116,6 +7119,10 @@ flex: 0 1 320px;
     -webkit-box-flex: 1;
     -ms-flex: 1 1;
     flex: 1 1;
+  }
+  .footer-title {
+    font-size: 14px;
+    width: 630px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -7291,7 +7298,7 @@ flex: 0 1 320px;
     margin-left: 0px;
   }
   .member-logs {
-    margin-left: 0px;
+    margin-left: 70%;
   }
   .box {
     padding: 1.5rem 0 0;
@@ -7386,8 +7393,19 @@ flex: 0 1 320px;
   .block-video .playlist .item {
     width: calc(50% - 10px);
   }
+  .navigation .button {
+   
+    padding: 36px 0;
+}
+.container-switcher {
+  margin-left: 223%;
+  margin-top: -72px;
+}
 }
 @media screen and (max-width: 650px) {
+  .container {
+    width: 600px;
+  }
   .popup-title-register{
     text-align: left;
 
@@ -7521,6 +7539,10 @@ flex: 0 1 320px;
   .box {
     margin: 0 0 1.5rem;
   }
+  .footer-title {
+    
+    width: 525px;
+  }
 }
 @media screen and (max-width: 560px) {
   .box {
@@ -7646,18 +7668,31 @@ display:none;
 .mobile-menu-auto{
   display: none;
 }
+@media screen and (max-width: 550px){
 
+.container {
+    width: 550px;
+}
+.footer-title {
+  width: 481px;
+}
+
+}
+@media screen and (max-width: 500px){
+.container {
+    width: 450px;
+}
+.footer-title {
+  width: 381px;
+}
+}
 @media screen and (max-width: 420px) {
-  .search {
-    display: flex;
-    padding: 2px 12px;
-    background-color: #121212;
-    border-radius: 4px;
-    margin-left: 26%;
-    margin-top: -45px;
-    height: 70px;
-    margin-right: 28%;
-  }
+  .container {
+    width: 375px;
+}
+.footer-title {
+  width: 350px;
+}
   .member-links ul > li:first-child{
     display: none;
   }
@@ -7950,19 +7985,19 @@ display:none;
     background-position: -3px -131px;
   }
 
-  .search .search-text input::placeholder{
+ /* .search .search-text input::placeholder{
     color:#929289;
     font-style: unset;
     font-size: 14px;
 
-  }
+  }*/
   .copyright {
     float: left;
     color: #666;
     margin: 20px 14px 0 8px;
     font-size: 12px;
   }
-  .search .search-text input{
+ /* .search .search-text input{
     top: -36px;
     left: 12px;
     width: 100%;
@@ -7975,10 +8010,11 @@ display:none;
     color: #888;
     font-size: 13px;
     font-family: unset;
-  }
+  }*/
   .container-switcher {
-    margin-left: 215px;
-    margin-top: 15px;
+   
+      margin-left: 137px;
+      margin-top: -90px;
     position: fixed;
     display: inline-block;
 }
@@ -8071,11 +8107,11 @@ display: none;
 
 .logo img{
   position: absolute;
-  height: 32px;
-  width: 118px;
+  height: 55px;
+  width: 125px;
   vertical-align: bottom;
-  top: 10px;
-  left: 150px;
+  top: 20px;
+  left: 135px;
 }
 form .captcha-control .image {
 margin: 0 0 1.5rem;
