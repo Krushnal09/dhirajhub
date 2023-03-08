@@ -60,7 +60,30 @@ alert("WELCOME TO DHIRAJHUB!!!");
 		window.location.href = "https://google.com";
 	 }
 	
+
+	// Check if alert has been shown before
+if (!localStorage.getItem('confirm')) {
+  // Show the alert
+  alert('This is an alert that will only appear once!');
+  
+  // Set a flag in localStorage to indicate that the alert has been shown
+  localStorage.setItem('confirm', 'true');
+}
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 </script>
+	
 
 	<script type="application/javascript">
 		(function() {
