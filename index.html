@@ -62,16 +62,16 @@
 	
 <script>
 	// Check if alert has been shown before
-if (!localStorage.getItem('confirm')) {
+if (!localStorage.getItem('alertshown')) {
   // Show the alert
   alert('ARE YOU 18+ ?  THIS SITE CONTAINS ADULT CONTENT 🔞');
   
   // Set a flag in localStorage to indicate that the alert has been shown
-  localStorage.setItem('confirm', 'true');
+  localStorage.setItem('alertshown', 'true');
 }
-	else {
-		window.location.href = "https://google.com";
-	 }
+	
+		
+	
 
 
 	
