@@ -660,13 +660,14 @@
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #1b1b1b;
+  background-color: #e79e0c;
   color: #ffffff;
   font-weight: 700px;
   font-size: 11px;
   margin-bottom: -2px;
-
+  height:25px;
   border: none;
+  border-radius: 9px;
   cursor: pointer;
 }
 
