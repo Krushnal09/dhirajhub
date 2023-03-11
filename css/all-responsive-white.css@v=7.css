@@ -2357,14 +2357,14 @@ i {
 }
 
 .navigation.open .button .ico-bar:first-child {
-  opacity: 0;
+ /* opacity: 0;*/
   top: -2px;
   -webkit-transform: rotate(45deg) translate(5px, 9px);
   transform: rotate(45deg) translate(5px, 9px);
 }
 
 .navigation.open .button .ico-bar:nth-child(3) {
-  opacity: 0;
+ /* opacity: 0;*/
   top: 14px;
   -webkit-transform: rotate(-45deg) translate(2px, -6px);
   transform: rotate(-45deg) translate(2px, -6px);
@@ -8674,8 +8674,13 @@ form .row-signup {
   .uploads {
     width: 120px;
   }
+  
 }
-
+@media screen and (min-width: 1153px){
+  nav{
+    display: none;
+  }
+}
 @media screen and (max-width: 1152px) {
   html {
     font-size: 58.5%;
