@@ -6227,11 +6227,13 @@ form .textfield-email-block {
   -webkit-box-shadow: -1px 1px 5px rgba(207, 207, 207, 0.65);
   box-shadow: -1px 1px 5px rgba(207, 207, 207, 0.65);
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #333333;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
-  width: 320px;
+  width: 310px;
+  height: 510px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
