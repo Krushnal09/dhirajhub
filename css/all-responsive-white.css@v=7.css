@@ -2119,7 +2119,7 @@ i {
 
 .no-touch .member-links a:hover,
 .no-touch .member-links a.disabled:hover {
-/*  background-color: #333333;*/
+  /*  background-color: #333333;*/
   color: #fff;
 }
 
@@ -9557,6 +9557,7 @@ form .row-signup {
   .container {
     width: 555px;
   }
+
   .member-links a {
     padding: 10px 1px 0 15px;
   }
@@ -9723,6 +9724,7 @@ form .row-signup {
   .footer-title {
     width: 481px;
   }
+
   .member-links a {
     font-size: 14px;
     text-transform: uppercase;
@@ -9748,9 +9750,11 @@ form .row-signup {
   .footer-title {
     width: 381px;
   }
-  .dropbtn{
+
+  .dropbtn {
     width: 107px;
   }
+
   .member-links a {
     padding: 10px 1px 0 5px;
   }
@@ -9760,16 +9764,17 @@ form .row-signup {
   .container {
     width: 405px;
   }
- 
 
-.dropbtn {
-   
+
+  .dropbtn {
+
     font-size: 12px;
-   
+
     height: 41px;
-   
-    width: 89px;;
-}
+
+    width: 89px;
+    ;
+  }
 }
 
 @media screen and (min-width: 220px) {
@@ -10464,4 +10469,29 @@ form .row-signup {
 
 .autocomplete-group strong {
   display: block;
+}
+
+@media screen and (max-width: 420px) {
+  .top-links-mobile {
+    width: 100%;
+  }
+
+  .box {
+    width: 96%;
+  }
+
+  .container {
+    width: 358px;
+  }
+
+  body {
+
+    min-height: 100%;
+    min-width: 350px;
+  }
+
+  .member-links li {
+
+    width: 109px;
+  }
 }
