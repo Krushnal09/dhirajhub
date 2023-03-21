@@ -661,14 +661,17 @@
 /* Dropdown Button */
 .dropbtn {
   background-color: #e79e0c;
+
   color: #ffffff;
   font-weight: 700px;
-  font-size: 11px;
+  font-size: 15px;
   margin-bottom: -2px;
-  height:25px;
+  height: 41px;
   border: none;
   border-radius: 9px;
   cursor: pointer;
+  margin-top: 3px;
+  width: 141px;
 }
 
 /* Dropdown button on hover & focus 
@@ -680,7 +683,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
-
+  height: 38px;
 
 }
 
@@ -693,13 +696,14 @@
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: +1;
-
+  border-radius: 9px;
 
 }
 
 #myDropdown a {
   color: #f90;
   background-color: #1b1b1b;
+  width: 140px;
 }
 
 /* Links inside the dropdown */
@@ -2024,8 +2028,16 @@ i {
 }
 
 .member-links li {
-  /*padding: 0 20px 0 0;*/
+  /* padding: 0 20px 0 0; */
   color: #fff;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 17px;
+  padding: -4px;
+  margin: 3px;
+  width: 155px;
+  height: 50px;
+
 }
 
 .btn-icon {
@@ -2081,13 +2093,13 @@ i {
 }
 
 .center-hold .member-links a {
-  padding: 0px;
+  /* padding: 0px;*/
   margin: 0px;
   text-align: center;
 }
 
 .member-links a {
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #bbbbbb;
   background-color: transparent;
@@ -2097,7 +2109,7 @@ i {
   display: block;
   margin: 0px -20px 0 20px;
   border-radius: 0px;
-  padding: 0px 29px 0 33px;
+  padding: 10px 1px 0 32px;
   width: 108px;
 }
 
@@ -2107,7 +2119,7 @@ i {
 
 .no-touch .member-links a:hover,
 .no-touch .member-links a.disabled:hover {
-  background-color: #333333;
+/*  background-color: #333333;*/
   color: #fff;
 }
 
@@ -2357,14 +2369,14 @@ i {
 }
 
 .navigation.open .button .ico-bar:first-child {
- /* opacity: 0;*/
+  /* opacity: 0;*/
   top: -2px;
   -webkit-transform: rotate(45deg) translate(5px, 9px);
   transform: rotate(45deg) translate(5px, 9px);
 }
 
 .navigation.open .button .ico-bar:nth-child(3) {
- /* opacity: 0;*/
+  /* opacity: 0;*/
   top: 14px;
   -webkit-transform: rotate(-45deg) translate(2px, -6px);
   transform: rotate(-45deg) translate(2px, -6px);
@@ -2417,6 +2429,11 @@ i {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  top: 32px;
+  position: absolute;
+  /* border: 1px solid #f90; */
+  border-radius: 21px;
+  box-shadow: 1px 1px black
 }
 
 .navigation .primary li:first-child {
@@ -2849,7 +2866,7 @@ h2 a {
   width: 955px;
   font-size: 14px;
   margin: 0 auto;
-  line-height: 14px;
+  line-height: 69px;
   padding: 20px 0px 0px;
   text-align: center;
 
@@ -3763,7 +3780,7 @@ div.top img {
 }
 
 .item .img img:first-child {
-  background: transparent;
+  background: grey;
   color: transparent;
   position: absolute;
   top: 0;
@@ -6017,7 +6034,7 @@ form .row-reset-password {
 }
 
 .block-video {
-  padding-top: 10px;
+  padding-top: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8676,13 +8693,15 @@ form .row-signup {
   .uploads {
     width: 120px;
   }
-  
+
 }
-@media screen and (min-width: 1153px){
-  nav{
+
+@media screen and (min-width: 1153px) {
+  nav {
     display: none;
   }
 }
+
 @media screen and (max-width: 1152px) {
   html {
     font-size: 58.5%;
@@ -9337,8 +9356,7 @@ form .row-signup {
   }
 
   .navigation .button {
-
-    padding: 36px 0;
+    padding: 18px 11px 41px 8px
   }
 
   .container-switcher {
@@ -9350,6 +9368,10 @@ form .row-signup {
 @media screen and (max-width: 650px) {
   .container {
     width: 588px;
+  }
+
+  .member-links a {
+    padding: 10px 1px 0 15px;
   }
 
   .popup-title-register {
@@ -9535,6 +9557,9 @@ form .row-signup {
   .container {
     width: 555px;
   }
+  .member-links a {
+    padding: 10px 1px 0 15px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -9663,7 +9688,7 @@ form .row-signup {
 .top-links-mobile {
   margin-top: 53px;
   background: #000;
-  border-bottom: 1px solid #242424;
+  /* border-bottom: 1px solid #242424;*/
   padding: 0px -2px;
   font-size: 12px;
   display: none;
@@ -9698,6 +9723,20 @@ form .row-signup {
   .footer-title {
     width: 481px;
   }
+  .member-links a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    line-height: 22px;
+    display: block;
+    margin: 0px -20px 0 20px;
+    border-radius: 0px;
+    padding: 10px 1px 0 15px;
+    width: 94px;
+  }
 
 }
 
@@ -9709,12 +9748,28 @@ form .row-signup {
   .footer-title {
     width: 381px;
   }
+  .dropbtn{
+    width: 107px;
+  }
+  .member-links a {
+    padding: 10px 1px 0 5px;
+  }
 }
 
 @media screen and (max-width: 440px) {
   .container {
     width: 405px;
   }
+ 
+
+.dropbtn {
+   
+    font-size: 12px;
+   
+    height: 41px;
+   
+    width: 89px;;
+}
 }
 
 @media screen and (min-width: 220px) {
@@ -9723,7 +9778,7 @@ form .row-signup {
     display: block;
 
     padding-top: 10px;
-    height: 50px;
+    height: 80px;
   }
 
   .member-links ul {
@@ -10116,8 +10171,8 @@ form .row-signup {
   }*/
   .container-switcher {
 
-    margin-left: 137px;
-    margin-top: -90px;
+    margin-left: 44px;
+    margin-top: -286px;
     position: fixed;
     display: inline-block;
   }
@@ -10155,10 +10210,11 @@ form .row-signup {
     width: 103%;
     margin-top: 0px;
     background: #000;
-    border-bottom: 1px solid #242424;
+    /* border-bottom: 1px solid #242424;*/
     padding: 0px -2px;
     font-size: 12px;
     display: block;
+    height: 70px;
   }
 
   .search-mobile {
@@ -10170,8 +10226,11 @@ form .row-signup {
   }
 
   .navigation.open .primary {
-    top: 23px;
+    top: 32px;
     position: absolute;
+    /* border: 1px solid #f90; */
+    border-radius: 21px;
+    box-shadow: 1px 1px black;
   }
 
   .navigation {
@@ -10181,12 +10240,13 @@ form .row-signup {
   }
 
   .navigation .button {
-    height: 52px !important;
+    height: 52 !important;
     width: 15% !important;
-    border-right: 2px solid black;
-    top: -50px;
+    border: 2px solid black;
+    top: -48px;
     left: 0px;
     position: absolute;
+    border-radius: 9px;
   }
 
   .member-links ul {
@@ -10197,19 +10257,26 @@ form .row-signup {
   }
 
   .center-hold .member-links a {
-    padding: 8px 15px 8px 9px;
+    padding: 9px 21px 8px 0px;
+
+    font-size: 13px;
   }
 
   .member-links a {
-    border-right: 1px solid #333;
-    border-bottom: 1px solid #333;
+    /* border-right: 1px solid #333;
+    border-bottom: 1px solid #333;*/
     margin: 0px;
     padding: 8px 15px 8px 9px;
-    width: 145px;
+    width: 130px;
   }
 
   .member-links li {
     text-align: center;
+    border: 2px solid #333;
+    border-radius: 17px;
+    padding: -4px;
+    margin: 3px;
+    width: 118px;
   }
 
   .header {

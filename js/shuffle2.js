@@ -1,8 +1,13 @@
-var divs = $("div.video_items vide_sidebar flex").get().sort(function(){
 
-return Math.round(Math.random())-0.2; 
+	var divs = $("div.item ").get().sort(function () {
 
- }).slice(0,22);
+		return Math.round(Math.random()) - 0.2;
 
-$(divs).appendTo(divs[0].parentNode).show();
+	}).slice(0, 17);
+
+	$(divs).appendTo(divs[0].parentNode).show();
+
+
+
+
 

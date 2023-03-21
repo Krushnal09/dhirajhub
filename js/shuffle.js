@@ -1,11 +1,7 @@
-var divs = $("div.item  ").get().sort(function(){
+var divs = $("div.video_items").get().sort(function () {
 
-return Math.round(Math.random())-0.2; 
+    return Math.round(Math.random()) - 0.2;
 
- }).slice(0,22);
+}).slice(0, 18);
 
 $(divs).appendTo(divs[0].parentNode).show();
-
-
-
-
