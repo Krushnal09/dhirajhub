@@ -10475,7 +10475,13 @@ form .row-signup {
   .top-links-mobile {
     width: 100%;
   }
-
+::-webkit-scrollbar{
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  
+  border-radius: 2px;
+}
   .box {
     width: 96%;
   }

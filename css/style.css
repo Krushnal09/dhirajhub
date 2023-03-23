@@ -44,7 +44,7 @@ i {
   transition: 0.5s;
 }
 
--------------------header------------
+/*-------------------header------------*/
 .header {
   position: fixed;
   top: 0;
@@ -75,18 +75,14 @@ header .header_container {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1040px){
 
-.search {
+header .search {
   display: flex;
-  padding: 2px 12px;
+  padding: 7px 12px;
   background-color: #121212;
   border-radius: 4px;
-  margin-left: 10%;
-  margin-top: 6px;
-  height: 69px;
- margin-right: 40%
-}
+  margin-left: 30%;
+  height: 53px;
 }
 
 header input {
@@ -183,7 +179,7 @@ header .toggle {
 
 .search-input.active .autocom-box {
   padding: 10px 8px;
-  opacity: 23;
+  opacity: 1;
   pointer-events: auto;
 }
 
@@ -195,7 +191,6 @@ header .toggle {
   cursor: default;
   border-radius: 3px;
   color: #d66902;
-  z-index: +1;
 }
 
 .search-input.active .autocom-box li {
@@ -215,22 +210,12 @@ header .toggle {
   text-align: center;
   line-height: 55px;
   font-size: 20px;
-  color: #dc8a2c;
+  color: #644bff;
   cursor: pointer;
 }
-@media screen and (max-width: 1040px){
-  .search-input {
-  
-    margin-left: 42%;
-    margin-top: 6px;
-   
-    margin-right: 41%;
-  }
-}
 
-
--------------------header------------
---------------nav------------
+/*-------------------header------------*/
+/*--------------nav------------*/
 .nav {
   position: fixed;
   top: 0;
@@ -338,7 +323,7 @@ header .toggle {
   color: #df9800;
 }
 
-----------nav_dropdown  
+/*----------nav_dropdown  */
 .nav_dropdown {
   overflow: hidden;
   max-height: 21px;
@@ -410,11 +395,11 @@ header .toggle {
   color: #ff0000;
 }
 
-----------nav_dropdown   
---------------nav------------
---------------video_items------------
+/*----------nav_dropdown   */
+/*--------------nav------------*/
+/*--------------video_items------------*/
 
--------banner------
+/*-------banner------*/
 
 .banner{
   
@@ -427,7 +412,7 @@ header .toggle {
 
 
 
--------banner------
+/*-------banner------*/
 
 main{
   margin-top: 45px;
@@ -501,7 +486,7 @@ main{
 }
 
 .count {
-  border: 10px  solid black;
+  /*border: 10px  solid black;*/
   border-radius: 12px;
   background-color: black;
   align-items: center;
@@ -727,10 +712,10 @@ ul {
 
 
 
-   header .none,
+  /* header .none,
   header .user {
     display: none;
-  }
+  }*/
   .wrapper {
     width: 40px;
     margin-top: 10px;
@@ -752,7 +737,7 @@ ul {
     margin: 10px;
     margin-left: 340px;
   }
- 
+
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -819,10 +804,10 @@ ul {
 
 
 
-   header .none,
+  /* header .none,
   header .user {
     display: none;
-  }
+  }*/
   .wrapper {
     width: 40px;
     margin-top: 10px;
@@ -844,7 +829,7 @@ ul {
     margin: 10px;
     margin-left: 95px;
   }
- 
+
   .grid {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 10px;

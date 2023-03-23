@@ -292,12 +292,10 @@ button {
 
   /* .nav_container{
     width: 20px;
-
   }*/
 /*  .nav:hover {
     width: 265px;
   }
-
   .nav .nav_subititle,
   .nav .logo_name,
   .nav .nav_dropdown-icon,
@@ -306,7 +304,6 @@ button {
     opacity: 0;
     transition: 0.5s;
   }
-
   .nav:hover .nav_subititle,
   .nav:hover .logo_name,
   .nav:hover .nav_dropdown-icon,
