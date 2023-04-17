@@ -735,6 +735,7 @@
   color: #f90;
   background-color: #1b1b1b;
   width: 140px;
+  height: 30px;
 }
 
 /* Links inside the dropdown */
@@ -784,8 +785,15 @@
 #vid {
   height: 103%;
   width: 100%;
+  pointer-events: none;
 }
-
+#vid::after{
+content: '';
+display: block;
+position: absolute;
+z-index: 1;
+background: white;
+}
 .container-switcher {
   margin-left: 469px;
   margin-top: 15px;
@@ -2136,12 +2144,14 @@ i {
   background-color: transparent;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  line-height: 22px;
-  display: block;
+  /* line-height: 22px; */
+  /* display: block; */
   margin: 0px -20px 0 20px;
   border-radius: 0px;
-  padding: 10px 1px 0 32px;
-  width: 108px;
+  padding: 0;
+  /* width: 62px; */
+  position: relative;
+  top: 11px
 }
 
 .member-links a.disabled {
@@ -9402,7 +9412,7 @@ form .row-signup {
   }
 
   .member-links a {
-    padding: 10px 1px 0 15px;
+    /*padding: 10px 1px 0 15px;*/
   }
 
   .popup-title-register {
@@ -9590,7 +9600,7 @@ form .row-signup {
   }
 
   .member-links a {
-    padding: 10px 1px 0 15px;
+    /* padding: 10px 1px 0 15px; */
   }
 }
 
@@ -9764,10 +9774,10 @@ form .row-signup {
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     line-height: 22px;
-    display: block;
+    /* display: block; */
     margin: 0px -20px 0 20px;
     border-radius: 0px;
-    padding: 10px 1px 0 15px;
+    /* padding: 10px 1px 0 15px; */
     width: 94px;
   }
 
@@ -9786,9 +9796,9 @@ form .row-signup {
     width: 107px;
   }
 
-  .member-links a {
+  /* .member-links a {
     padding: 10px 1px 0 5px;
-  }
+  } */
 }
 
 @media screen and (max-width: 440px) {
@@ -10280,7 +10290,7 @@ form .row-signup {
     width: 15% !important;
     border: 2px solid black;
     top: -48px;
-    left: 0px;
+    left: 5px;
     position: absolute;
     border-radius: 9px;
   }
@@ -10293,7 +10303,7 @@ form .row-signup {
   }
 
   .center-hold .member-links a {
-    padding: 9px 21px 8px 0px;
+    /* padding: 9px 21px 8px 0px; */
 
     font-size: 13px;
   }
