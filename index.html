@@ -22,6 +22,7 @@
 	<script src="./js/script.js"></script>
 	<script src="./js/shuffle.js"></script>
 	<script src="./js/drop.js"></script>
+	<!---->
 	<script>
 		var pageContext = {
 			loginUrl: 'login-required/'
@@ -64,23 +65,19 @@
 	</script>
 
 	<!--Mobile full-->
-	<script type="application/javascript" 
-data-idzone="4946230" data-ad_first_trigger_clicks="3" data-ad_next_trigger_clicks="4" data-type="mobile" 
-data-browser_settings="1" 
-data-ad_trigger_method="3" 
-src="https://a.realsrv.com/fp-interstitial.js"></script>
+	<script type="application/javascript" data-idzone="4946230" data-ad_first_trigger_clicks="3"
+		data-ad_next_trigger_clicks="4" data-type="mobile" data-browser_settings="1" data-ad_trigger_method="3"
+		src="https://a.realsrv.com/fp-interstitial.js"></script>
 
-<!--Desktop full-->
-<script type="application/javascript" 
-data-idzone="4946228" data-ad_first_trigger_clicks="3" data-ad_next_trigger_clicks="5" data-type="desktop" 
-data-browser_settings="1" 
-data-ad_trigger_method="3" 
-src="https://a.realsrv.com/fp-interstitial.js"></script>
+	<!--Desktop full-->
+	<script type="application/javascript" data-idzone="4946228" data-ad_first_trigger_clicks="3"
+		data-ad_next_trigger_clicks="5" data-type="desktop" data-browser_settings="1" data-ad_trigger_method="3"
+		src="https://a.realsrv.com/fp-interstitial.js"></script>
 
- <script async type="application/javascript" src="https://a.realsrv.com/ad-provider.js">
- </script>
+	<script async type="application/javascript" src="https://a.realsrv.com/ad-provider.js">
+	</script>
 
-<!--<script type="application/javascript">
+	<!--<script type="application/javascript">
 	(function() {
 	
 		//version 1.0.0
@@ -135,16 +132,16 @@ src="https://a.realsrv.com/fp-interstitial.js"></script>
 		</div>
 	</div>
 	-->
-<!--Pre loader  -->
-<script src="js/loader.js"></script>
-<div id="loader-container">
-	<div id="loader"></div>
-</div>
+	<!--Pre loader  -->
+	<script src="js/loader.js"></script>
+	<div id="loader-container">
+		<div id="loader"></div>
+	</div>
 
 
 
 
-<!--main content-->
+	<!--main content-->
 	<div class="container" id="container">
 
 		<div class="header">
@@ -247,16 +244,16 @@ window.onclick = function (event) {
 							</div>
 							</div>
 					</li>-->
-					
-					
+
+
 					<li>
 						<i class="list-2"></i>
 						<a href="" id="item3">Most Popular</a>
 					</li>
-				
 
 
-					
+
+
 
 					<li>
 						<i class="list-4"></i>
@@ -266,14 +263,14 @@ window.onclick = function (event) {
 						<i class="list-5"></i>
 						<a href="" id="item10">Channels</a>
 					</li>
-					
-					
-                    
+
+
+
 					<li>
 						<i class="list-6"></i>
 						<a href="" id="item11">About Us</a>
 					</li>
-					
+
 					<li class="switch-mobile"></li>
 				</ul>
 				<ul class="secondary">
@@ -322,7 +319,7 @@ window.onclick = function (event) {
 									<a href="/categories/movie" class="nav_dropdown-item">Movie</a>
 									<a href="/categories/solo" class="nav_dropdown-item">Solo</a>
 									<a href="/categories/ownerschoice" class="nav_dropdown-item">Owner's Choice</a>
-									
+
 								</div>
 							</div>
 						</li>
@@ -401,10 +398,46 @@ window.onclick = function (event) {
 
 					<div class="headline">
 						<h1> Videos Being Watched </h1>
+						<div class="sort">
+							<span class="icon type-sort"></span>
+							<strong>Latest</strong>
+							<ul id="list_videos_most_recent_videos_sort_list">
+								<li>
+									<a id="latest" data-action="latest"
+										data-container-id="list_videos_most_recent_videos_sort_list"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:video_viewed">new</a> 
 
-						<div class="filters-more">
-							<a href="" class="float-right filterBtn"><span class="section_plus">+</span>More Videos</a>
+
+									
+								</li>
+								<li>
+									<a data-action="oldest" data-container-id="list_videos_most_recent_videos_sort_list"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:rating">Oldest</a>
+								</li>
+								<li>
+									<a data-action="ajax" data-container-id="list_videos_most_recent_videos_sort_list"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:duration">Longest</a>
+								</li>
+								<li>
+									<a data-action="ajax" data-container-id="list_videos_most_recent_videos_sort_list"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:most_commented">Most Commented</a>
+								</li>
+								<li>
+									<a data-action="ajax" data-container-id="list_videos_most_recent_videos_sort_list"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:most_favourited">Most Favourited</a>
+								</li>
+							</ul>
 						</div>
+						<div class="filters-more">
+							<a href="" class="float-right filterBtn"><span class="section_plus">+</span>More
+								Videos</a>
+						</div>
+
 					</div>
 
 					<div class="box">
@@ -417,7 +450,7 @@ window.onclick = function (event) {
 
 							<!--------------------------------->
 							<div class="margin-fix" id="list_videos_videos_watched_right_now_items">
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video1">
 
 										<div class="img">
@@ -462,7 +495,7 @@ window.onclick = function (event) {
 								</div>
 
 								<!---------------------------->
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video2">
 										<div class="img">
 
@@ -506,7 +539,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video3" title="GHETTO GAGGERS - Tidy Bowl Girl">
 
 										<div class="img">
@@ -553,7 +586,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video4" title="Legalbdsm	br_v01_3">
 
 										<div class="img">
@@ -598,7 +631,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video5" title="FACIAL ABUSE - ﻿﻿Catlynn">
 
 										<div class="img">
@@ -645,7 +678,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video6"
 										title="BondageLife	Rachel Greyhound - Greyhound Gets The Fucking Machine">
 
@@ -694,7 +727,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video7" title="FACIAL ABUSE - Vanessa Naughty">
 
 										<div class="img">
@@ -742,7 +775,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video8" title="GHETTO GAGGERS - Whited Out">
 
 										<div class="img">
@@ -790,7 +823,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video9" title="FACIAL ABUSE - Dahlia Denyle">
 										<div class="img">
 
@@ -837,7 +870,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video10" title="FACIAL ABUSE - Metal Kitty 1">
 
 										<div class="img">
@@ -885,7 +918,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video11" title="INFERNAL RESTRAINTS - Capsized">
 
 										<div class="img">
@@ -933,7 +966,7 @@ window.onclick = function (event) {
 									</a>
 								</div>
 
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video12" title="Legalbdsm	an_v02_6">
 
 										<div class="img">
@@ -978,7 +1011,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video13" title="Camgirl Chokes Herself with Belt">
 
 										<div class="img">
@@ -1023,7 +1056,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video14"
 										title="DICK DRAINERS - Use Her Face However You Want...">
 
@@ -1072,7 +1105,7 @@ window.onclick = function (event) {
 										</div>
 									</a>
 								</div>
-								<div class="item  ">
+								<div class="item" id="item">
 									<a href="/videoweb/video15"
 										title="BRUTAL MASTER  Wednesday StrappadoIn Ballet Boots">
 
@@ -1171,56 +1204,13 @@ window.onclick = function (event) {
 
 						</script>
 
-						<div class="headline">
-							<h2> New Videos </h2>
 
-							<div class="sort">
-								<span class="icon type-sort"></span>
-								<strong>Latest</strong>
-								<ul id="list_videos_most_recent_videos_sort_list">
-									<li>
-										<a data-action="ajax"
-											data-container-id="list_videos_most_recent_videos_sort_list"
-											data-block-id="list_videos_most_recent_videos"
-											data-parameters="sort_by:video_viewed">Most Viewed</a>
-									</li>
-									<li>
-										<a data-action="ajax"
-											data-container-id="list_videos_most_recent_videos_sort_list"
-											data-block-id="list_videos_most_recent_videos"
-											data-parameters="sort_by:rating">Top Rated</a>
-									</li>
-									<li>
-										<a data-action="ajax"
-											data-container-id="list_videos_most_recent_videos_sort_list"
-											data-block-id="list_videos_most_recent_videos"
-											data-parameters="sort_by:duration">Longest</a>
-									</li>
-									<li>
-										<a data-action="ajax"
-											data-container-id="list_videos_most_recent_videos_sort_list"
-											data-block-id="list_videos_most_recent_videos"
-											data-parameters="sort_by:most_commented">Most Commented</a>
-									</li>
-									<li>
-										<a data-action="ajax"
-											data-container-id="list_videos_most_recent_videos_sort_list"
-											data-block-id="list_videos_most_recent_videos"
-											data-parameters="sort_by:most_favourited">Most Favourited</a>
-									</li>
-								</ul>
-							</div>
-							<div class="filters-more">
-								<a href="" class="float-right filterBtn"><span class="section_plus">+</span>More
-									Videos</a>
-							</div>
-						</div>
 
 						<div class="box">
 							<div class="list-videos">
-								
+
 								<div class="margin-fix" id="list_videos_most_recent_videos_items">
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video16" title="Legalbdsm	al_v01_2">
 
 											<div class="img">
@@ -1265,7 +1255,7 @@ window.onclick = function (event) {
 											</div>
 										</a>
 									</div>
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video17" title="Legalbdsm	ad_v01_8">
 
 											<div class="img">
@@ -1310,7 +1300,7 @@ window.onclick = function (event) {
 											</div>
 										</a>
 									</div>
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video18" title="Aziani Iron	dd">
 
 											<div class="img">
@@ -1357,7 +1347,7 @@ window.onclick = function (event) {
 											</div>
 										</a>
 									</div>
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video19" title="Legalbdsm	ad_v01_9">
 
 											<div class="img">
@@ -1402,7 +1392,7 @@ window.onclick = function (event) {
 											</div>
 										</a>
 									</div>
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video20" title="Aziani Iron	brianna jordan 452">
 
 											<div class="img">
@@ -1450,7 +1440,7 @@ window.onclick = function (event) {
 											</div>
 										</a>
 									</div>
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video21" title="Aziani Iron	 carmin 910">
 
 											<div class="img">
@@ -1498,7 +1488,7 @@ window.onclick = function (event) {
 											</div>
 										</a>
 									</div>
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video22" title="Aziani Iron	 briana beau 871">
 
 											<div class="img">
@@ -1546,7 +1536,7 @@ window.onclick = function (event) {
 											</div>
 										</a>
 									</div>
-									<div class="item  ">
+									<div class="item" id="item">
 										<a href="/videoweb/video23" title="Legalbdsm	br_v01_6">
 
 											<div class="img">
@@ -1827,7 +1817,7 @@ window.onclick = function (event) {
 				</div>
 			</div>
 
-			
+
 
 	</div>
 	<div class="footer-links">
