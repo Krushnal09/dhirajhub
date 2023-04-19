@@ -233,8 +233,9 @@
 								<div id="kt_player">
 									<video width="100%" height="100%" controls>
 										<source
-											src="https://res.cloudinary.com/dcocxyeco/video/upload/v1681724645/Vids/test1_k5alva.mp4">
-											
+											src="https://res.cloudinary.com/dcocxyeco/video/upload/v1681754165/Vids/Video_24_znexhh.mp4
+											">
+
 									</video>
 								</div>
 							</div>
@@ -572,11 +573,11 @@
 				</div>
 			</div>
 			<div class="related-videos" id="list_videos_related_videos">
-				<ul class="list-sort" id="list_videos_related_videos_filter_list">
+				<!-- <ul class="list-sort" id="list_videos_related_videos_filter_list">
 					<li><span>Related Videos</span></li>
 
 
-				</ul>
+				</ul> -->
 				<script>
 
 					function loading() {
@@ -624,7 +625,16 @@
 
 				</script>
 
+				<script src="https://codejquery.com/jquery-3.6.0.min.js"></script>
+				<script>
+					$(document).ready(function () {
+						$.get('/', function (data) {
+							var divs = $(data).find('.item');
+							$('.margin-fix').appendTo('divs');
+						});
+					});
 
+				</script>
 				<div class="box">
 					<div class="list-videos">
 						<div class="adv-home">
@@ -1003,16 +1013,7 @@
 									</div>
 								</a>
 							</div> -->
-							<script src="https://codejquery.com/jquery-3.6.0.min.js"></script>
-							<script>
-								$(document).ready(function(){
-								$.get('/index.html', function(data) {
-									var divs = $(data).find('.item');
-									$('.margin-fix').appendTo('divs');
-								});
-							});
 
-							</script>
 						</div>
 					</div>
 				</div>
@@ -1023,7 +1024,7 @@
 	</div>
 	<h2 class="footer-title">
 	</h2>
-	<p class="footer-texts">The Pornhub team is always updating and adding more porn videos every day. It's all here
+	<p class="footer-texts">The Dhirajhub team is always updating and adding more porn videos every day. It's all here
 		and 100% free porn. We have a huge free XXX DVD selection that you can download or stream. Pornhub is the
 		most complete and revolutionary porn tube site. We offer streaming porn videos, downloadable XXX DVDs, photo
 		albums, and the number 1 free sex community on the net. We’re always working towards adding more features
