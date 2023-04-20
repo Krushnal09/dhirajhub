@@ -363,8 +363,18 @@
 													src="//s7.addthis.com/js/250/addthis_widget.js" defer></script>
 												<!-- AddThis Button END -->
 											</div>
-											<input type="text" id="share_link" class="textfield middle" value=""
-												readonly>
+											<div id="share_link" class="textfield middle">
+
+											</div>
+											<script src="/js/share.js"></script>
+											<!-- <script>
+													function displayURL() {
+														var currentURL = window.location.href;
+														var urlBox = document.getElementById("share_link");
+														urlBox.innerHTML = currentURL;
+													}
+													displayURL();
+												</script> -->
 										</div>
 										<div class="row">
 											<label for="share_bb_code" class="field-label">BB code</label>
@@ -372,13 +382,16 @@
 										</div>
 										<div class="row">
 											<label for="share_embed_code" class="field-label">Embed code</label>
-											<input type="text" id="share_embed_code" class="textfield embed-code"
-												value="" readonly>
+											<div id="embed_code" class="textfield embed-code">
+												&ltiframe src=&quot &quot width=&quot560px&quot height=&quot400px&quot allowfullscreen&gt &lt/iframe&gt
+													
+											</div>
+											
 										</div>
 										<div class="row">
 											<label class="field-label">Embed size</label>
 											<div class="block-size">
-												<a class="embed-button" href="#embed_400x225"
+												<!-- <a class="embed-button" href="#embed_400x225"
 													data-embed-size="400x225">400x225</a>
 												<a class="embed-button" href="#embed_480x270"
 													data-embed-size="480x270">480x270</a>
@@ -389,7 +402,7 @@
 												<a class="embed-button embed-button-custom" href="#embed_custom"
 													data-embed-size="852x480">Custom: <span
 														class="embed-code-custom-width-label">852</span>x<span
-														class="embed-code-custom-height-label">480</span></a>
+														class="embed-code-custom-height-label">480</span></a> -->
 												<div class="custom-size">
 													<label for="share_embed_code_width" class="field-label">Embed
 														size</label>

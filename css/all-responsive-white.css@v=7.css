@@ -1190,7 +1190,10 @@ form .row {
   position: relative;
   width: 100%;
   margin: 0 0px 2rem;
-  line-height: 0;
+  /* line-height: 0; */
+}
+#embed_code{
+  height: 80px;
 }
 
 .message-form form .row {
@@ -1394,8 +1397,9 @@ form .file {
   border-radius: 3px;
   height: 37px;
   margin-left: 0px;
+  overflow-wrap: break-word;
+  font-size: 14px;
 }
-
 form .textarea {
   resize: none;
   min-height: 120px;
@@ -1460,6 +1464,7 @@ form .file-control {
 form .file-control .textfield {
   padding-left: 24px;
 }
+
 
 form .file-control .button {
   position: absolute;
