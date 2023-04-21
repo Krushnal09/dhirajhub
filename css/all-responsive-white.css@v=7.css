@@ -1194,6 +1194,7 @@ form .row {
 }
 #embed_code{
   height: 80px;
+  width: 55%;
 }
 
 .message-form form .row {
@@ -9804,6 +9805,10 @@ form .row-signup {
   /* .member-links a {
     padding: 10px 1px 0 5px;
   } */
+  #embed_code {
+    width: 65%;
+  }
+
 }
 
 @media screen and (max-width: 440px) {
@@ -9853,6 +9858,9 @@ form .row-signup {
     width: 375px;
   }
 
+  #embed_code {
+    width: 75%;
+  }
   .footer-title {
     width: 350px;
   }
