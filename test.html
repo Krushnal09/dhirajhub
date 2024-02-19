@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+
+    
+    <script>
+      
+const firebaseConfig = {
+    apiKey: "AIzaSyA95rq2gZ2o6JfiH-a2tcPMLi97evcW3mE",
+authDomain: "dhub-09.firebaseapp.com",
+databaseURL: "https://dhub-09-default-rtdb.europe-west1.firebasedatabase.app",
+projectId: "dhub-09",
+storageBucket: "gs://dhub-09.appspot.com",
+messagingSenderId: "486177348563",
+appId:  "1:486177348563:web:ca1216297cddd106ad6d26",
+measurementId: "G-HSJP70KW1N"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+// Assuming firebase.initializeApp(firebaseConfig); is already called
+
+// After the page is loaded, fetch video data from Firebase
+document.addEventListener('DOMContentLoaded', function() {
+    var dbRef = firebase.database().ref('uploads/main/'); // Adjust path as needed
+    dbRef.on('value', function(snapshot) {
+        var videos = snapshot.val();
+        var videoListHTML = '';
+        for (var id in videos) {
+            videoListHTML += '<div class="item" data-number="' + videos[id].dataNumber + '" onclick="openVideo(\'' + videos[id].videoUrl + '\', \'' + escape(videos[id].title) + '\')">' +
+                             '<img src="' + videos[id].imageUrl + '" alt="Poster" style="cursor:pointer;">' +
+                             '<p>' + videos[id].title + '</p>' +
+                             '</div>';
+        }
+        document.getElementById('mediaContainer').innerHTML = videoListHTML;
+    });
+});
+
+function openVideo(videoUrl, title) {
+    window.location.href = 'video.html?videoUrl=' + encodeURIComponent(videoUrl) + '&title=' + title;
+}
+
+</script>
+
+
+
+    
+
+    <!---->
+
+	<title>DHIRAJHUB</title>
+
+
+
+	<meta name='asg_verification' content='Mqwq9tTYzYsUB7TqUwKyLRMG'>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/c2614694fb.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link href="./css/all-responsive-white.css@v=7.css" rel="stylesheet" type="text/css" />
+	<link href="./css/jquery.fancybox-white.css@v=7.css" rel="stylesheet" type="text/css" />
+	<script src="./js/jQuery.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/shuffle.js"></script>
+	<script src="./js/drop.js"></script>
+	<!---->
+	<script>
+		var pageContext = {
+			loginUrl: 'login-required/'
+		};
+	</script>
+	<script>
+		$(document).ready(function () {
+
+			if ($(window).width() <= 420) {
+				$(".search-text, .search-button").hide();
+			} else {
+				$(".search-text, .search-button").show();
+			}
+			$("#search-toggle").click(function () {
+				$(".search-text, .search-button").slideUp();
+			});
+			$("#search-open").click(function () {
+				$(".search-text, .search-button").slideDown();
+			});
+
+
+		});
+	</script>
+	<link href="" rel="alternate" type="application/rss+xml" />
+	<link href="" rel="canonical" />
+
+</head>
+
+<body>
+
+	<script>
+		// Check if alert has been shown before
+		if (!localStorage.getItem('alertshown')) {
+			// Show the alert
+			alert('ARE YOU 18+ ?  THIS SITE CONTAINS ADULT CONTENT 🔞');
+
+			// Set a flag in localStorage to indicate that the alert has been shown
+			localStorage.setItem('alertshown', 'true');
+		}
+	</script>
+
+	<!--Mobile full-->
+
+	<!--Pre loader  -->
+	<script src="js/loader.js"></script>
+	<div id="loader-container">
+		<div id="loader"></div>
+	</div>
+
+
+
+
+	<!--main content-->
+	<div class="container" id="container">
+
+		<div class="header">
+			<div class="logo" id="logo">
+				<a href="/"><img src="./images/logo.jpeg" width="130" height="43" alt=""></a>
+			</div>
+			<div class="social-bookmarks">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+					<div class="member-logs">
+						<a data-href="" data-fancybox="ajax" id="login">Login</a>
+						<a data-href="" data-fancybox="ajax">Sign Up</a>
+					</div>
+
+				</div>
+				<script type="text/javascript">
+					var addthis_config = {
+						ui_language: ''
+					}
+				</script>
+				<script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js" defer></script>
+				<!-- AddThis Button END -->
+			</div>
+			<div class="search">
+
+				<div class="container-switcher">
+					<div class="round">
+						<input type="checkbox" id="checkbox" />
+
+						<label for="checkbox"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<div class="navigation">
+				<button class="button">
+					<span class="icon">
+						<span class="ico-bar"></span>
+						<span class="ico-bar"></span>
+						<span class="ico-bar"></span>
+					</span>
+				</button>
+				<ul class="primary">
+					<li>
+						<div class="mobile-menu-auto">
+							<a href="" data-fancybox="ajax">
+								<i class="loginIcon"></i>
+								<span>Login</span>
+							</a>
+							<a href="" data-fancybox="ajax">
+								<i class="registerIcon"></i><span>Signup</span>
+							</a>
+							<a data-href="" data-fancybox="ajax">
+								<i class="uploadBtn"></i>
+								<span>Upload</span>
+							</a>
+						</div>
+					</li>
+					<li class="main-list-menu"><span>MAIN</span></li>
+					<li class="selected">
+						<i class="list-0"></i>
+						<a href="" id="item1">Home</a>
+					</li>
+					<!--<li id="drop-list">
+						<div class="dropdown"  onclick="Function2()">
+							<button class="dropbtn">CATEGORIES</button> <img src="/images/down-arrow-square-outlined-button.png" ></img>
+							<div id="myDropdown" class="dropdown-content">
+							 <a href="/categories/anal" class="nav_dropdown-item">Anal</a>
+							 <a href="/categories/aunty" class="nav_dropdown-item">Aunty</a>
+							 <a href="/categories/arab" class="nav_dropdown-item">Arab</a>
+							 <a href="/categories/asian" class="nav_dropdown-item">Asian</a>
+							 <a href="/categories/bbc" class="nav_dropdown-item">BBC</a>
+							 <a href="/categories/bbw" class="nav_dropdown-item">BBW</a>
+							 <a href="/categories/bhabhi" class="nav_dropdown-item">Bhabhi</a>
+							 <a href="/categories/black" class="nav_dropdown-item">Black</a>
+							 <a href="/categories/cumshot" class="nav_dropdown-item">Cumshot</a>
+							 <a href="/categories/deepthroat" class="nav_dropdown-item">Deepthroat</a>
+							 <a href="/categories/gangbang" class="nav_dropdown-item">Gangbang</a>
+							 <a href="/categories/hardcore" class="nav_dropdown-item">Hardcore</a>
+							 <a href="/categories/hentai" class="nav_dropdown-item">Hentai</a>
+							 <a href="/categories/hindi" class="nav_dropdown-item">Hindi</a>
+							 <a href="/categories/indian" class="nav_dropdown-item">Indian</a>
+							 <a href="/categories/maid" class="nav_dropdown-item">Maid</a>
+							 <a href="/categories/mms" class="nav_dropdown-item">MMS</a>
+							 <a href="/categories/movie" class="nav_dropdown-item">Movie</a>
+							 <a href="/categories/solo" class="nav_dropdown-item">Solo</a>
+							 <a href="/categories/ownerschoice" class="nav_dropdown-item">Owner's Choice</a>
+				<script>
+					function Function2() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+				</script>
+							</div>
+							</div>
+					</li>-->
+
+
+					<li>
+						<i class="list-2"></i>
+						<a href="" id="item3">Most Popular</a>
+					</li>
+
+
+
+
+
+					<li>
+						<i class="list-4"></i>
+						<a href="" id="item8">Pornstar</a>
+					</li>
+					<li>
+						<i class="list-5"></i>
+						<a href="" id="item10">Channels</a>
+					</li>
+
+
+
+					<li>
+						<i class="list-6"></i>
+						<a href="" id="item11">About Us</a>
+					</li>
+
+					<li class="switch-mobile"></li>
+				</ul>
+				<ul class="secondary">
+				</ul>
+			</div>
+		</nav>
+		<!-------------Mobile--->
+		<div class="top-links-mobile">
+			<div class="center-hold">
+				<div class="member-links">
+					<ul>
+						<li class="selected-link">
+							<a href="/">Home</a>
+						</li>
+
+
+
+
+
+
+
+						<li>
+							<a href="#" id="item7">Sites</a>
+						</li>
+						<li>
+							<div class="dropdown" onclick="myFunction()">
+								<button class="dropbtn">CATEGORIES</button>
+								<div id="myDropdown" class="dropdown-content">
+									<a href="/categories/anal" class="nav_dropdown-item">Anal</a>
+									<a href="/categories/aunty" class="nav_dropdown-item">Aunty</a>
+									<a href="/categories/arab" class="nav_dropdown-item">Arab</a>
+									<a href="/categories/asian" class="nav_dropdown-item">Asian</a>
+									<a href="/categories/bbc" class="nav_dropdown-item">BBC</a>
+									<a href="/categories/bbw" class="nav_dropdown-item">BBW</a>
+									<a href="/categories/bhabhi" class="nav_dropdown-item">Bhabhi</a>
+									<a href="/categories/black" class="nav_dropdown-item">Black</a>
+									<a href="/categories/cumshot" class="nav_dropdown-item">Cumshot</a>
+									<a href="/categories/deepthroat" class="nav_dropdown-item">Deepthroat</a>
+									<a href="/categories/gangbang" class="nav_dropdown-item">Gangbang</a>
+									<a href="/categories/hardcore" class="nav_dropdown-item">Hardcore</a>
+									<a href="/categories/hentai" class="nav_dropdown-item">Hentai</a>
+									<a href="/categories/hindi" class="nav_dropdown-item">Hindi</a>
+									<a href="/categories/indian" class="nav_dropdown-item">Indian</a>
+									<a href="/categories/maid" class="nav_dropdown-item">Maid</a>
+									<a href="/categories/mms" class="nav_dropdown-item">MMS</a>
+									<a href="/categories/movie" class="nav_dropdown-item">Movie</a>
+									<a href="/categories/solo" class="nav_dropdown-item">Solo</a>
+									<a href="/categories/ownerschoice" class="nav_dropdown-item">Owner's Choice</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="/html/profile" id="item4">ABOUT US</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!-------------Mobile--->
+		<div class="content" id="content">
+			<div id="welcome">
+				<a href="/">
+					<strong>Welcome</strong></a>
+				<strong>to the</strong>
+				<a href="/">
+					<strong> best </strong></a>
+				<strong>Porn site</strong><a href="/"><strong> ~ DHIRAJHUB</strong></a>
+
+			</div>
+			<div class="main-content">
+
+				<div class="main-container">
+					<script>
+
+						function loading() {
+							alert('loading');
+
+						}
+						$(function () {
+							$(".img").on("touchstart", function () {
+
+								$('.focus').removeClass('focus');
+								$(this).addClass('focus');
+								$('.mobile-line').animate({ width: '99%' });
+								setTimeout(function () {
+									$('.mobile-line').css('width', '0%')
+								}, 799);
+
+
+
+							});
+
+
+
+							$(".thumb").mouseover(function () {
+
+								setTimeout(function () {
+									$('.ico-fav-01').css('background', 'transparent')
+								}, 1000);
+
+
+							});
+
+							$(".title").mouseover(function () {
+								$('.ico-fav-01').css('background', 'transparent')
+
+							});
+							$(".wrap").mouseover(function () {
+								$('.ico-fav-01').css('background', 'transparent')
+
+							});
+							$(".thumb").mouseover(function () {
+								$('.ico-fav-01').css('background', '#f90')
+
+							});
+						});
+
+					</script>
+					<script src="/js/filter.js"></script>
+
+
+
+					<div class="headline">
+						<h1> Videos Being Watched </h1>
+						<div class="sort">
+							<span class="icon type-sort"></span>
+							<strong>Sortby</strong>
+							<ul id="list_videos_most_recent_videos_sort_list">
+								<li id="latest">
+									<button onclick="sortDivs('ascending')">oldest</button>
+
+
+								</li>
+								<li>
+									<button onclick="sortDivs('descending')">latest</button>
+
+								</li>
+								
+							</ul>
+						</div>
+						<script>
+							function sortDivs(order) {
+								var container = document.querySelector('.margin-fix');
+								var divs = document.querySelectorAll('.item');
+								var divArray = Array.from(divs);
+
+								divArray.sort(function (a, b) {
+									var aNumber = parseInt(a.getAttribute('data-number'));
+									var bNumber = parseInt(b.getAttribute('data-number'));
+
+									if (order === 'ascending') {
+										return aNumber - bNumber;
+									} else if (order === 'descending') {
+										return bNumber - aNumber;
+									}
+								});
+
+
+								// Remove existing divs from the container
+								container.innerHTML = '';
+
+								// Append sorted divs back to the parent container
+								divArray.forEach(function (div) {
+								
+								container.appendChild(div);
+								});
+							}
+						</script>
+
+						<div class="filters-more">
+							<a href="" class="float-right filterBtn"><span class="section_plus">+</span>More
+								Videos</a>
+						</div>
+
+					</div>
+
+					<div class="box">
+						<div class="list-videos">
+							<div class="adv-home">
+								<!--<span>Adv</span>-->
+							</div>
+
+
+							<!--------------------------------->
+							<div class="margin-fix" id="mediaContainer" >
+								
+
+
+
+
+
+                        
+
+
+							</div>
+						</div>
+					</div>
+					<script>
+
+						$('.pages-selector:contains("01")').text('1');
+						$('.pages-selector:contains("02")').text("2");
+						$('.pages-selector:contains("03")').text("3");
+						$('.pages-selector:contains("04")').text("4");
+						$('.pages-selector:contains("05")').text("5");
+						$('.pages-selector:contains("06")').text("6");
+						$('.pages-selector:contains("07")').text("7");
+						$('.pages-selector:contains("08")').text("8");
+						$('.pages-selector:contains("09")').text("9");
+
+					</script>
+					<div class="pagination" id="list_videos_most_recent_videos_pagination">
+						<div class="pagination-holder">
+							<ul>
+								<li class="prev"><span>Back</span></li>
+								<li class="first"><span>First</span></li>
+
+								<li class="page-current"><span class="pages-selector">1</span></li>
+								<li class="page"><a href="" class="pages-selector">2</a></li>
+								<li class="page"><a href="" class="pages-selector">3</a></li>
+								<li class="page"><a href="" class="pages-selector">4</a></li>
+								<li class="page"><a href="" class="pages-selector">5</a></li>
+								<li class="page"><a href="" class="pages-selector">6</a></li>
+								<li class="page"><a href="" class="pages-selector">7</a></li>
+								<li class="page"><a href="" class="pages-selector">8</a></li>
+								<li class="page"><a href="" class="pages-selector">9</a></li>
+
+								<li class="jump"><a href="" data-action="ajax"
+										data-container-id="list_videos_most_recent_videos_pagination"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:post_date;from:10">...</a></li>
+								<li class="last"><a href="" data-action="ajax"
+										data-container-id="list_videos_most_recent_videos_pagination"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:post_date;from:1101">Last</a></li>
+								<li class="next"><a href="" data-action="ajax"
+										data-container-id="list_videos_most_recent_videos_pagination"
+										data-block-id="list_videos_most_recent_videos"
+										data-parameters="sort_by:post_date;from:2">Next</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box tags-cloud">
+			<a href="#" style="font-weight: bold; font-size: 13px;">kinkycore</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">arms tied</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">dildo</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">brunette</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">erotic muscle videos</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">girl sub</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">missionary</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">black haired</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">pussy rubbing</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">legs tied</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">deepthroat</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">cock sucking</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">clinical torments</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">pussy fucking</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">cowgirl</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">cum on face</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">pussy fingering</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">vibrator</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">ghetto gaggers</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">insex</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">facial abuse</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">blonde</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">shadowslaves</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">doggy style</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">sex and submission</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">anal</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">femdom empire</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">ultimate surrender</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">high heels</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">inked</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">big tits</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">futilestruggles</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">tattooed guy</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">male dom</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">freaks inside</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">drool</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">average tits</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 13px;">kinky gate</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">painted nails</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">tattooed girl</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">oral</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 15px;">girl tied up</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">blowjob</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">pussy licking</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">natural tits</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 12px;">reverse cowgirl</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">fetish nation</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">tattoos</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 14px;">small tits</a>
+			&nbsp;&nbsp;
+			<a href="#" style="font-weight: bold; font-size: 16px;">plumperpass</a>
+			&nbsp;&nbsp;
+			<a href="#" class="all">Show All Tags</a>
+		</div>
+
+
+	</div>
+
+
+	<h2 class="footer-title">
+	</h2>
+	<p class="footer-texts">The team is always updating and adding more porn videos every day. It's all here and
+		100% free porn. We have a huge free XXX DVD selection that you can download or stream. Pornhub is the most
+		complete and revolutionary porn tube site. We offer streaming porn videos, downloadable XXX DVDs, photo
+		albums, and the number 1 free sex community on the net. We’re always working towards adding more features
+		that will keep your love for porno alive and well. Send us feedback if you have any questions/comments.</p>
+	<div class="footerContentWrapper">
+	</div>
+	<!--<div class="footer">-->
+
+
+	<script src="./js/main.min.js@v=7.3"></script>
+	<script>
+		$.blockUI.defaults.overlayCSS = {};
+	</script>
+	<!--</div>-->
+
+
+
+
+
+
+	<section id="footer">
+		<div class="footerContent">
+			<div class="col">
+				<ul>
+					<li class="title alpha">Information</li>
+					<li><a id="footerMenu_terms" href="./html/terms" rel="nofollow">Terms &amp; Conditions</a></li>
+					<li><a id="footerMenu_privacy" href="./html/privacypolicy" rel="nofollow">Privacy Policy</a>
+					</li>
+					<li><a id="footerMenu_dmca" href="#" rel="nofollow">DMCA</a></li>
+					<li class="omega"><a id="footerMenu_btn-2257" href="" rel="nofollow">2257</a></li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<ul>
+					<li class="title alpha">Work With Us</li>
+					<li><a id="footerMenu_partner" href="#" rel="nofollow">Content Partners</a></li>
+					<li><a id="footerMenu_advertising" href="" rel="nofollow">Advertise</a></li>
+					<li><a href="#" rel="nofollow">Webmasters</a></li>
+					<li><a href="#" rel="nofollow">Model Program</a></li>
+					<li class="omega"><a href="#" rel="nofollow">Press</a></li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<ul>
+					<li class="title alpha">Support and Help</li>
+					<li><a id="footerMenu_faq" href="#" rel="nofollow">FAQ</a></li>
+					<li>
+						<a href="#" rel="nofollow">
+							Contact Support</a>
+					</li>
+					<li><a href="#" rel="nofollow">Feedback Forum</a></li>
+					<li class="omega"><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<ul>
+					<li class="title alpha">Discover</li>
+					<li><a href="#">Pornhub Blog</a></li>
+					<li><a href="#">Insights Blog</a></li>
+					<li><a href="#">Sexual Wellness Center</a></li>
+					<li><a onclick="javascript:void(0);" href="#">Mobile </a>
+						<a onclick="javascript:void(0);" href="#"> Tablet </a>
+					</li>
+					<!--TODO adjust the link-->
+					<li><a onclick="javascript:void(0);" href="#"> Visually Impaired</a></li>
+					<li class="omega"><a href="#">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+
+	</div>
+	<div class="footer-links">
+		<div class="socialIconsWrapper">
+			<a href="" rel="noopener" target="_blank">
+				<img class="lazy" id="twitterImage"
+					src="https://di.phncdn.com/www-static/images/socialIcons/Twitter.svg?cache=2019100301"
+					data-src="https://di.phncdn.com/www-static/images/socialIcons/Twitter.svg?cache=2019100301"
+					data-img_type="image">
+			</a>
+			<a href="" rel="noopener" target="_blank">
+				<img class="lazy" id="instaImage"
+					src="https://di.phncdn.com/www-static/images/socialIcons/Instagram.svg?cache=2019100301"
+					data-src="https://di.phncdn.com/www-static/images/socialIcons/Instagram.svg?cache=2019100301"
+					data-img_type="image">
+			</a>
+			<a href="" rel="noopener" target="_blank">
+				<img class="lazy" id="youtubeImage"
+					src="https://di.phncdn.com/www-static/images/socialIcons/Youtube.svg?cache=2019100301"
+					data-src="https://di.phncdn.com/www-static/images/socialIcons/Youtube.svg?cache=2019100301"
+					data-img_type="image">
+			</a>
+			<a href="" rel="noopener" target="_blank">
+				<img class="lazy" id="redditImage"
+					src="https://di.phncdn.com/www-static/images/socialIcons/Reddit.svg?cache=2019100301"
+					data-src="https://di.phncdn.com/www-static/images/socialIcons/Reddit.svg?cache=2019100301"
+					data-img_type="image">
+			</a>
+			<a href="" rel="noopener" target="_blank">
+				<img class="lazy" id="discordImage"
+					src="https://di.phncdn.com/www-static/images/socialIcons/Discord.svg?cache=2019100301"
+					data-src="https://di.phncdn.com/www-static/images/socialIcons/Discord.svg?cache=2019100301"
+					data-img_type="image">
+			</a>
+			<!-- <span class="copyright">© Pornhub.com, 2022</span> -->
+		</div>
+	</div>
+	</div>
+	<script>(AdProvider = window.AdProvider || []).push({ 'serve': {} }); </script>
+	<script>
+		/*Check discreet mode*/
+		function onClickBox() {
+			var arr = $('#checkbox').map(function () {
+				return this.checked;
+			}).get();
+			localStorage.setItem("checked", JSON.stringify(arr));
+			location.reload();
+		}
+
+		$(document).ready(function () {
+			let checked;
+			var arr = JSON.parse(localStorage.getItem('checked')) || [];
+			arr.forEach(function (checked, i) {
+				$('#checkbox').eq(i).prop('checked', checked);
+			});
+
+			$("#checkbox").click(onClickBox);
+
+			if (arr[0] == true) {
+				$('.round').append('<span>black</span>');
+				$('.container').css('background', '#ffffff');
+				$('#welcome').css('color', '#000000');
+				$('.headline h1').css('color', '#000000');
+				$('.list-videos .item').css({ 'background': '#ffffff', 'box-shadow': 'none' });
+				$('.added').css('color', '#000000');
+				$('.views').css('color', '#000000');
+				$('.rating').css('color', '#000000');
+				$('.top-links').css('border-bottom', '1px solid #ffffff');
+				$('.header').css({ 'background': '#000000', 'border-bottom': '1px solid #ffffff' });
+				$('.header + nav').css({ 'background': '#000000' });
+				$('p.text').css('color', '#000000');
+				$('h2').css('color', '#000000');
+				$('.tags-cloud a').css('color', '#000000');
+				$('.footer-texts').css('color', '#000000');
+				$('.tags-cloud .all').css('background', '#ffffff');
+				$('.block-video .video-holder').css({ 'background': '#000000', 'border-radius': 'unset' });
+
+				$('.item .title').css('margin', '0px 4px 5px');
+				$('.sidebar h2').css('color', '#ffffff');
+				$('.page').click(function () {
+					setTimeout(function () {
+						location.reload();
+					}, 550);
+				});
+				$('.prev').click(function () {
+					setTimeout(function () {
+						location.reload();
+					}, 550);
+				});
+				$('.next').click(function () {
+					setTimeout(function () {
+						location.reload();
+					}, 550);
+				});
+
+			} else {
+				$('.round').append('<span style="left: 20px;">white</span>');
+			}
+		});
+		if ($(window).width() <= 420) {
+			$('.container-switcher').appendTo('.switch-mobile');
+		}
+		if (window.location.href.indexOf("albums") > -1) {
+			$('.fancybox-inner').css('width', 'auto');
+		}
+		$(".fade-models, .list-albums .thumb").hide(0).delay(2000).fadeIn(2500)
+	</script>
+
+	<script src="./js/jquery.autocomplete.min.js"></script>
+	<script>
+		$('#search_form input[type="text"]').autocomplete({
+			minChars: 3,
+			deferRequestBy: 100,
+			serviceUrl: 'search_suggestions.php',
+			groupBy: 'type', paramName: 'q'
+		});
+	</script>
+</body>
+<script src="/js/jQuery.js" charset="utf-8"></script>
+<script src="/js/shuffle.js" charset="utf-8"></script>
+<script src="/js/shuffle2.js" charset="utf-8"></script>
+
+</html>
