@@ -30,7 +30,7 @@ firebase.initializeApp(firebaseConfig);
 
 // After the page is loaded, fetch video data from Firebase
 document.addEventListener('DOMContentLoaded', function() {
-    var dbRef = firebase.database().ref('uploads/bbc/'); // Adjust path as needed
+    var dbRef = firebase.database().ref('uploads/jav/'); // Adjust path as needed
     dbRef.on('value', function(snapshot) {
         var videos = snapshot.val();
         var videoItems = [];

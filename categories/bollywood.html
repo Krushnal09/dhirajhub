@@ -30,7 +30,7 @@ firebase.initializeApp(firebaseConfig);
 
 // After the page is loaded, fetch video data from Firebase
 document.addEventListener('DOMContentLoaded', function() {
-    var dbRef = firebase.database().ref('uploads/bbc/'); // Adjust path as needed
+    var dbRef = firebase.database().ref('uploads/bollywood/'); // Adjust path as needed
     dbRef.on('value', function(snapshot) {
         var videos = snapshot.val();
         var videoItems = [];
@@ -319,6 +319,7 @@ window.onclick = function (event) {
 									<!-- <a href="/categories/movie" class="nav_dropdown-item">Movie</a>
 									<a href="/categories/solo" class="nav_dropdown-item">Solo</a> -->
 									<a href="/categories/exclusive" class="nav_dropdown-item">Exclusive</a>
+
 								</div>
 							</div>
 						</li>
