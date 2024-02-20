@@ -279,54 +279,63 @@
         </button>
         <br><br><br>
         <script>
-            document.getElementById('signInButton').addEventListener('click', function () {
-                var provider = new firebase.auth.GoogleAuthProvider();
-                firebase.auth().signInWithPopup(provider).then(function (result) {
-                    // This gives you a Google Access Token. You can use it to access the Google API.
-                    // The signed-in user info.
-                    console.log('Sign-in successful.');
-                }).catch(function (error) {
-                    // Handle Errors here.
-                    console.error(error);
-                });
-            });
+          document.getElementById('signInButton').addEventListener('click', function () {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        // The signed-in user info.
+        console.log('Sign-in successful.');
+    }).catch(function (error) {
+        // Handle Errors here.
+        console.error(error);
+    });
+});
 
-            document.getElementById('signOutButton').addEventListener('click', function () {
-                firebase.auth().signOut().then(function () {
-                    console.log('Sign-out successful.');
-                }).catch(function (error) {
-                    console.error(error);
-                });
-            });
+document.getElementById('signOutButton').addEventListener('click', function () {
+    firebase.auth().signOut().then(function () {
+        console.log('Sign-out successful.');
+        // Reset UI to initial state
+        document.getElementById('signInButton').style.display = 'block';
+        document.getElementById('signOutButton').style.display = 'none';
+        document.getElementById('uploadFormContainer').style.display = 'none';
+    }).catch(function (error) {
+        console.error(error);
+    });
+});
 
-            firebase.auth().onAuthStateChanged(user => {
-                const loginTimestamp = localStorage.getItem('loginTimestamp');
-                const now = new Date().getTime();
+firebase.auth().onAuthStateChanged(user => {
+    const loginTimestamp = localStorage.getItem('loginTimestamp');
+    const now = new Date().getTime();
 
-                if (user) {
-                    document.getElementById('signInButton').style.display = 'none';
-                    document.getElementById('signOutButton').style.display = 'block';
+    if (user && user.email === "dhirajub755@gmail.com") { // Check if the user's email matches the allowed email
+        document.getElementById('signInButton').style.display = 'none';
+        document.getElementById('signOutButton').style.display = 'block';
 
-                    if (!loginTimestamp) {
-                        localStorage.setItem('loginTimestamp', now.toString());
-                    } else if (now - parseInt(loginTimestamp, 10) > 86400000) { // 86400000 ms = 24 hours
-                        // More than 24 hours since login, sign out the user
-                        firebase.auth().signOut();
-                        localStorage.removeItem('loginTimestamp');
-                        alert('Session expired. Please sign in again.');
-                        return;
-                    }
+        if (!loginTimestamp) {
+            localStorage.setItem('loginTimestamp', now.toString());
+        } else if (now - parseInt(loginTimestamp, 10) > 86400000) { // 86400000 ms = 24 hours
+            // More than 24 hours since login, sign out the user
+            firebase.auth().signOut();
+            localStorage.removeItem('loginTimestamp');
+            alert('Session expired. Please sign in again.');
+            return;
+        }
 
-                    // Show the upload form if user is authenticated and email matches
-                    document.getElementById('uploadFormContainer').style.display = 'block';
-                } else {
-                    // No user is signed in or session expired
-                    document.getElementById('signInButton').style.display = 'block';
-                    document.getElementById('signOutButton').style.display = 'none';
-                    document.getElementById('uploadFormContainer').style.display = 'none';
-                    localStorage.removeItem('loginTimestamp'); // Clear the timestamp
-                }
-            });
+        // Show the upload form if user is authenticated and email matches
+        document.getElementById('uploadFormContainer').style.display = 'block';
+    } else {
+        // No user is signed in, session expired, or email does not match
+        document.getElementById('signInButton').style.display = 'block';
+        document.getElementById('signOutButton').style.display = 'none';
+        document.getElementById('uploadFormContainer').style.display = 'none';
+        localStorage.removeItem('loginTimestamp'); // Clear the timestamp
+        if (user && user.email !== "dhirajub755@gmail.com") {
+            alert("Access Denied. Only specific users are allowed."); // Notify user if email doesn't match
+            firebase.auth().signOut(); // Sign out the user
+        }
+    }
+});
+
         </script>
         <div id="uploadFormContainer" style="display: none;" class="upload">
 
