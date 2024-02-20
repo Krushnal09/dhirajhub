@@ -307,7 +307,7 @@ firebase.auth().onAuthStateChanged(user => {
     const loginTimestamp = localStorage.getItem('loginTimestamp');
     const now = new Date().getTime();
 
-    if (user && user.email === "dhirajub755@gmail.com") { // Check if the user's email matches the allowed email
+    if (user && user.email === "dhirajhub755@gmail.com") { // Check if the user's email matches the allowed email
         document.getElementById('signInButton').style.display = 'none';
         document.getElementById('signOutButton').style.display = 'block';
 
@@ -329,7 +329,7 @@ firebase.auth().onAuthStateChanged(user => {
         document.getElementById('signOutButton').style.display = 'none';
         document.getElementById('uploadFormContainer').style.display = 'none';
         localStorage.removeItem('loginTimestamp'); // Clear the timestamp
-        if (user && user.email !== "dhirajub755@gmail.com") {
+        if (user && user.email !== "dhirajhub755@gmail.com") {
             alert("Access Denied. Only specific users are allowed."); // Notify user if email doesn't match
             firebase.auth().signOut(); // Sign out the user
         }
