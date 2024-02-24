@@ -795,9 +795,9 @@ z-index: 1;
 background: white;
 }
 .container-switcher {
-  margin-left: 469px;
-  margin-top: 15px;
-  position: relative;
+  margin-left: 90px;
+  margin-top: -69px;
+  position: absolute;
   display: inline-block;
 }
 
@@ -7680,9 +7680,9 @@ form .row-signup {
   }
 
   .container-switcher {
-    margin-left: 269px;
-    margin-top: -49px;
-    position: RE;
+    margin-left: 69px;
+    margin-top: -75px;
+    position: absolute;
     display: inline-block;
   }
 
@@ -8024,7 +8024,7 @@ form .row-signup {
   }
 
   .container-switcher {
-    margin-left: 223%;
+    margin-left: 23%;
     margin-top: -72px;
   }
 }
@@ -8779,9 +8779,8 @@ form .row-signup {
     font-family: unset;
   }*/
   .container-switcher {
-
-    margin-left: 44px;
-    margin-top: -286px;
+    margin-left: 46px;
+    margin-top: -169px;
     position: fixed;
     display: inline-block;
   }
