@@ -389,18 +389,18 @@ firebase.auth().onAuthStateChanged(user => {
     const database = firebase.database();
 
     document.getElementById('uploadForm').addEventListener('submit', function (event) {
-        event.preventDefault();
+            event.preventDefault();
 
-        // Get form values
-        const videoFile = document.getElementById('videoFile').files[0];
-        const imageFile = document.getElementById('imgFile').files[0];
-        const title = document.getElementById('title').value;
-        const dataNumber = document.getElementById('dataNumber').value;
-        const category = document.getElementById('category').value;
-        const uploadProgress = document.getElementById('uploadProgress');
-        const uploadPercentage = document.getElementById('uploadPercentage'); // Get the percentage display element
+            // Get form values
+            const videoFile = document.getElementById('videoFile').files[0];
+            const imageFile = document.getElementById('imgFile').files[0]; 
+            const title = document.getElementById('title').value;
+            const dataNumber = document.getElementById('dataNumber').value;
+            const category = document.getElementById('category').value;
+            const uploadProgress = document.getElementById('uploadProgress');
+            const uploadPercentage = document.getElementById('uploadPercentage'); // Get the percentage display element
 
-        // Initialize progress variables
+                  // Initialize progress variables
         let videoUploadProgress = 0;
         let imageUploadProgress = 0;
 
@@ -470,5 +470,78 @@ firebase.auth().onAuthStateChanged(user => {
     });
 </script>
 
+<script>
+    /*Check discreet mode*/
+    function onClickBox() {
+        var arr = $('#checkbox').map(function () {
+            return this.checked;
+        }).get();
+        localStorage.setItem("checked", JSON.stringify(arr));
+        location.reload();
+    }
+
+    $(document).ready(function () {
+        let checked;
+        var arr = JSON.parse(localStorage.getItem('checked')) || [];
+        arr.forEach(function (checked, i) {
+            $('#checkbox').eq(i).prop('checked', checked);
+        });
+
+        $("#checkbox").click(onClickBox);
+
+        if (arr[0] == true) {
+        $('.header').css({ 'background': '#ffffff'});
+        $('.round').append('<span>black</span>');
+        $('.top-links-mobile').css('background', '#ffffff');
+        $('.member-links li a').css('color', '#000');
+        $('.container').css('background', '#ffffff');
+        $('#welcome').css('color', '#000000');
+        $('.headline h1').css('color', '#000000');
+        $('.list-videos .item').css({ 'background': '#ffffff', 'box-shadow': 'none' });
+        $('.added').css('color', '#000000');
+        $('.views').css('color', '#000000');
+        $('.container-switcher span').css('color', '#000000');
+        $('.main-container').css({'background-color': '#ffffff', 'border' : '1px solid #000'});
+        $('.rating').css('color', '#000000');
+        $('.top-links').css('border-bottom', '1px solid #ffffff');
+        $('.header').css({  'border-bottom': '1px solid #000' });
+        $('.header + nav').css({ 'background': '#000000' });
+        $('p.text').css('color', '#000000');
+        $('h2').css('color', '#000000');
+        $('.tags-cloud a').css('color', '#000000');
+        $('.footer-texts').css('color', '#000000');
+        $('.tags-cloud .all').css('background', '#ffffff');
+        $('.block-video .video-holder').css({ 'background': '#000000', 'border-radius': 'unset' });
+
+        $('.item .title').css('margin', '0px 4px 5px');
+        $('.sidebar h2').css('color', '#ffffff');
+        $('.page').click(function () {
+            setTimeout(function () {
+                location.reload();
+            }, 550);
+        });
+        $('.prev').click(function () {
+            setTimeout(function () {
+                location.reload();
+            }, 550);
+        });
+        $('.next').click(function () {
+            setTimeout(function () {
+                location.reload();
+            }, 550);
+        });
+
+        } else {
+            $('.round').append('<span style="left: 20px;">white</span>');
+        }
+    });
+    if ($(window).width() <= 420) {
+        $('.container-switcher').appendTo('.switch-mobile');
+    }
+    if (window.location.href.indexOf("albums") > -1) {
+        $('.fancybox-inner').css('width', 'auto');
+    }
+    $(".fade-models, .list-albums .thumb").hide(0).delay(2000).fadeIn(2500)
+</script>
 
 </html>

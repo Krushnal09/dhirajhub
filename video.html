@@ -59,9 +59,8 @@
 	<link href="" rel="canonical" />
 
 	<meta property="og:title" content="DHIRAJHUB" />
-	<meta property="og:image" content="./images/logo1.jpg" />
-	<meta property="og:description"
-		content="Black bitch gets tossed and turned before getting dicked down in more positions that we can count. Or maybe we just lost track of them once they started looking like a gymnastics trial. Either way, he gets sucked, she gets fucked, we all have a good, good time." />
+	<meta property="og:image" content="./images/logo1.jpeg" />
+	<meta property="og:description" content="Initial content" />
 </head>
 
 <body>
@@ -188,78 +187,91 @@
 		</div>
 
 		<!-------------Mobile--->
-		
-
-			<div class="video-holder">
-
-				<video class="player" id="videoPlayer" controls>
-					
-
-				</video>
-					
-				<div class="vid-title">
-					<h2 id="videoTitle"></h2>
-
-				</div>
-				<script>
-					function getQueryParams() {
-						var params = {};
-						var search = window.location.search.substring(1);
-						search.split('&').forEach(function (part) {
-							var item = part.split('=');
-							params[item[0]] = decodeURIComponent(item[1]);
-						});
-						return params;
-					}
-				
-					window.onload = function () {
-						var params = getQueryParams();
-						document.getElementById('videoPlayer').src = params.videoUrl;
-						document.getElementById('videoTitle').textContent = unescape(params.title);
-					}
-				
-				</script>
-
-				<div class="tabs-menu">
-					<ul>
-
-						<li><a href="#tab_share" class="toggle-button">Share</a></li>
-
-					</ul>
-				</div>
 
 
-				<div id="tab_share" class="tab-content hidden">
-					<div class="block-share">
+		<div class="video-holder">
 
-						<div class="row">
-
-							<div class="block-bookmarks">
-								<!-- AddThis Button BEGIN -->
-								<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-									<a class="a2a_button_facebook"></a>
-
-									<a class="a2a_button_whatsapp"></a>
-									<a class="a2a_button_twitter"></a>
-									<a class="a2a_dd"></a>
-									<a class="a2a_button_copy_link"></a>
-
-								</div>
-								<script type="text/javascript">
-									var addthis_config = {
-										ui_language: ''
-									}
-								</script>
-								<script async src="https://static.addtoany.com/menu/page.js"></script>
-								<!-- AddThis Button END -->
-							</div>
-						</div>
+			<video class="player" id="videoPlayer" controls>
 
 
-					</div>
-				</div>
-				
+			</video>
+
+			<div class="vid-title">
+				<h2 id="videoTitle"></h2>
+
 			</div>
+			<script>
+
+				function getQueryParams() {
+					var params = {};
+					var search = window.location.search.substring(1);
+					search.split('&').forEach(function (part) {
+						var item = part.split('=');
+						params[item[0]] = decodeURIComponent(item[1]);
+					});
+					return params;
+				}
+
+				window.onload = function () {
+					var params = getQueryParams();
+					document.getElementById('videoPlayer').src = params.videoUrl;
+					document.getElementById('videoTitle').textContent = unescape(params.title);
+
+					// Find the meta tag by name or create a new one if it doesn't exist
+					var metaTag = document.querySelector('meta[name="description"]');
+					if (!metaTag) {
+						metaTag = document.createElement('meta');
+						metaTag.setAttribute('name', 'description');
+						document.getElementsByTagName('head')[0].appendChild(metaTag);
+					}
+
+					// Update the meta tag content
+					metaTag.setAttribute('content', unescape(params.title));
+				}
+
+
+			</script>
+
+			<div class="tabs-menu">
+				<ul>
+
+					<li><a href="#tab_share" class="toggle-button">Share</a></li>
+
+				</ul>
+			</div>
+
+
+			<div id="tab_share" class="tab-content hidden">
+				<div class="block-share">
+
+					<div class="row">
+
+						<div class="block-bookmarks">
+							<!-- AddThis Button BEGIN -->
+							<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+								<a class="a2a_button_facebook"></a>
+
+								<a class="a2a_button_whatsapp"></a>
+								<a class="a2a_button_twitter"></a>
+								<a class="a2a_dd"></a>
+								<a class="a2a_button_copy_link"></a>
+
+							</div>
+							<script type="text/javascript">
+								var addthis_config = {
+									ui_language: ''
+								}
+							</script>
+							<script async src="https://static.addtoany.com/menu/page.js"></script>
+							<!-- AddThis Button END -->
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
 
 
 
@@ -268,7 +280,7 @@
 	</div>
 	</div>
 	<div class="related-videos" id="list_videos_related_videos">
-		
+
 		<script>
 
 			function loading() {
@@ -462,41 +474,46 @@
 				$("#checkbox").click(onClickBox);
 
 				if (arr[0] == true) {
-					$('.round').append('<span>black</span>');
-					$('.container').css('background', '#ffffff');
-					$('#welcome').css('color', '#000000');
-					$('.headline h1').css('color', '#000000');
-					$('.list-videos .item').css({ 'background': '#ffffff', 'box-shadow': 'none' });
-					$('.added').css('color', '#000000');
-					$('.views').css('color', '#000000');
-					$('.rating').css('color', '#000000');
-					$('.top-links').css('border-bottom', '1px solid #ffffff');
-					$('.header').css({ 'background': '#000000', 'border-bottom': '1px solid #ffffff' });
-					$('.header + nav').css({ 'background': '#000000' });
-					$('p.text').css('color', '#000000');
-					$('h2').css('color', '#000000');
-					$('.tags-cloud a').css('color', '#000000');
-					$('.footer-texts').css('color', '#000000');
-					$('.tags-cloud .all').css('background', '#ffffff');
-					$('.block-video .video-holder').css({ 'background': '#000000', 'border-radius': 'unset' });
+				$('.header').css({ 'background': '#ffffff'});
+				$('.round').append('<span>black</span>');
+				$('.top-links-mobile').css('background', '#ffffff');
+				$('.member-links li a').css('color', '#000');
+				$('.container').css('background', '#ffffff');
+				$('#welcome').css('color', '#000000');
+				$('.headline h1').css('color', '#000000');
+				$('.list-videos .item').css({ 'background': '#ffffff', 'box-shadow': 'none' });
+				$('.added').css('color', '#000000');
+				$('.views').css('color', '#000000');
+				$('.container-switcher span').css('color', '#000000');
+				$('.main-container').css({'background-color': '#ffffff', 'border' : '1px solid #000'});
+				$('.rating').css('color', '#000000');
+				$('.top-links').css('border-bottom', '1px solid #ffffff');
+				$('.header').css({  'border-bottom': '1px solid #000' });
+				$('.header + nav').css({ 'background': '#000000' });
+				$('p.text').css('color', '#000000');
+				$('h2').css('color', '#000000');
+				$('.tags-cloud a').css('color', '#000000');
+				$('.footer-texts').css('color', '#000000');
+				$('.tags-cloud .all').css('background', '#ffffff');
+				$('.block-video .video-holder').css({ 'background': '#000000', 'border-radius': 'unset' });
 
-					$('.item .title').css('margin', '0px 4px 5px');
-					$('.sidebar h2').css('color', '#ffffff');
-					$('.page').click(function () {
-						setTimeout(function () {
-							location.reload();
-						}, 550);
-					});
-					$('.prev').click(function () {
-						setTimeout(function () {
-							location.reload();
-						}, 550);
-					});
-					$('.next').click(function () {
-						setTimeout(function () {
-							location.reload();
-						}, 550);
-					});
+				$('.item .title').css('margin', '0px 4px 5px');
+				$('.sidebar h2').css('color', '#ffffff');
+				$('.page').click(function () {
+					setTimeout(function () {
+						location.reload();
+					}, 550);
+				});
+				$('.prev').click(function () {
+					setTimeout(function () {
+						location.reload();
+					}, 550);
+				});
+				$('.next').click(function () {
+					setTimeout(function () {
+						location.reload();
+					}, 550);
+				});
 
 				} else {
 					$('.round').append('<span style="left: 20px;">white</span>');
