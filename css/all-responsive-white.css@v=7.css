@@ -2457,6 +2457,7 @@ i {
   padding: 0%;
   margin: 64px;
   background-color: black;
+  display: none;
 }
 
 .navigation .primary a {
@@ -7886,6 +7887,12 @@ form .row-signup {
     max-width: 100%;
   }
 
+  .item {
+  
+    height: 90%;
+    width: 95%;
+    }
+  
   .popup-title {
     padding: 0;
   }
@@ -8126,11 +8133,6 @@ form .row-signup {
 
 @media screen and (max-width: 640px) {
 
-
-  
-
-  
-
  
   .box {
     margin: 0 0 1.5rem;
@@ -8144,7 +8146,10 @@ form .row-signup {
 
 @media screen and (max-width: 600px) {
 
-
+  .item {
+    height: 100%;
+    width: 75%;
+  }
   #vid {
     height: 99%;
     width: 99%;
