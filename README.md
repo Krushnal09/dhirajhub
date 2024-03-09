@@ -22,7 +22,7 @@ I'm a full stack developer...
 KRUSHNAL PATIL
 
 
-![Logo]https://dhirajhub.netlify.app/images/Krushnal patil.jpeg)
+![Logo](https://dhirajhub.netlify.app/images/Krushnal patil.jpeg)
 
 
 
