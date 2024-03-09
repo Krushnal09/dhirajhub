@@ -9,7 +9,7 @@ DHIRAJ INGLE
 # Hi, I'm Dhiraj! 👋
 
 
-![Logo](https://dhirajhub.cf/images/logo1.jpeg)
+![Logo](https://dhirajhub.netlify.app/images/logo1.jpeg)
 
 
 
@@ -22,13 +22,13 @@ I'm a full stack developer...
 KRUSHNAL PATIL
 
 
-![Logo](https://Krushnal09.cf/IMG/preview(2).png)
+![Logo](https://Krushnal.work.gd/IMG/preview(2).png)
 
 
 
 # 🔗 Links
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://krushnal09.cf/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://krushnal.work.gd/)
 
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/krushnal_09?=08/)
 
