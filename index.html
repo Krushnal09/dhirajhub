@@ -178,7 +178,7 @@
 
 
 						<li>
-							<a href="" id="item1">SITES</a>
+							<a href="" id="item4">SITES</a>
 						</li>
 						<li>
 							<div class="dropdown" onclick="myFunction()">
@@ -201,7 +201,7 @@
 									<a href="./categories/jav" class="nav_dropdown-item">JAV</a>
 									<a href="./categories/hentai" class="nav_dropdown-item">Hentai</a>
 									<a href="./categories/hindi" class="nav_dropdown-item">Hindi</a>
-									<a href="./categories/indian" class="nav_dropdown-item">Indian</a>
+								<a href="./categories/indian" class="nav_dropdown-item">Indian</a> 	<a href="./categories/indo" class="nav_dropdown-item">Indonesian</a>
 									<a href="./categories/maid" class="nav_dropdown-item">Maid</a>
 									<a href="./categories/mms" class="nav_dropdown-item">MMS</a>
 									<a href="./categories/movie" class="nav_dropdown-item">Movie</a>
@@ -581,12 +581,19 @@
 
 			if (arr[0] == true) {
 				$('.header').css({ 'background': '#ffffff' });
+				$('body').css({ 'background': '#ffffff' });
+				$('.primary').css({ 'background': '#ffffff' });
+				$('.primary li a, .mobile-menu-auto a span').css({ 'color': '#000' });
 				$('.round').append('<span>black</span>');
 				$('.top-links-mobile').css('background', '#ffffff');
 				$('.member-links li a').css('color', '#000');
 				$('.container').css('background', '#ffffff');
 				$('#welcome').css('color', '#000000');
 				$('.headline h1').css('color', '#000000');
+				$('.nav_dropdown-item a').css('color', '#fffff');
+				$('.dropdown-content show a').css('background', '#ffffff');
+				$('.dropbtn').css({ 'background-color': '#ffffff' , 'color': '#000'});
+				$('#myDropdown a').css({'background':'#ffffff'});;
 				$('.list-videos .item').css({ 'background': '#ffffff', 'box-shadow': 'none' });
 				$('.added').css('color', '#000000');
 				$('.views').css('color', '#000000');
@@ -604,7 +611,10 @@
 				$('.block-video .video-holder').css({ 'background': '#000000', 'border-radius': 'unset' });
 
 				$('.item .title').css('margin', '0px 4px 5px');
+				$('.vid-title').css({'background-color': '#fffff' ,'color' :'#000'});
+				$('.item p').css('background', 'orange');
 				$('.sidebar h2').css('color', '#ffffff');
+				$('#footer').css('background-color', '#ffffff');
 				$('.page').click(function () {
 					setTimeout(function () {
 						location.reload();
@@ -633,6 +643,7 @@
 		}
 		$(".fade-models, .list-albums .thumb").hide(0).delay(2000).fadeIn(2500)
 	</script>
+
 
 	<script src="./js/jquery.autocomplete.min.js"></script>
 	<script>

@@ -152,10 +152,38 @@
 
 
 						<li>
-							<a href="" id="item1">SITES</a>
+							<a href="" id="item4">SITES</a>
 						</li>
 						<li>
-							<a href="/index.html" id="item1">HOME</a>
+							<div class="dropdown" onclick="myFunction()">
+								<button class="dropbtn">CATEGORIES</button>
+								<div id="myDropdown" class="dropdown-content">
+
+									<a href="./categories/arab" class="nav_dropdown-item">Arab</a>
+									<a href="./categories/asian" class="nav_dropdown-item">Asian</a>
+									<a href="./categories/bbc" class="nav_dropdown-item">BBC</a>
+									<a href="./categories/bbw" class="nav_dropdown-item">BBW</a>
+									<a href="./categories/bhabhi" class="nav_dropdown-item">Bhabhi</a>
+									<a href="./categories/black" class="nav_dropdown-item">Black</a>
+									<a href="./categories/blowjob" class="nav_dropdown-item">BLOWJOB</a>
+									<a href="./categories/cumshot" class="nav_dropdown-item">Cumshot</a>
+									<a href="./categories/bollywood.html" class="nav_dropdown-item">BOLLYWOOD</a>
+									<a href="./categories/deepthroat" class="nav_dropdown-item">Deepthroat</a>
+									<a href="./categories/gangbang" class="nav_dropdown-item">Gangbang</a>
+									<a href="./categories/hardcore" class="nav_dropdown-item">Hardcore</a>
+									<a href="./categories/jav" class="nav_dropdown-item">JAV</a>
+									<a href="./categories/hentai" class="nav_dropdown-item">Hentai</a>
+									<a href="./categories/hindi" class="nav_dropdown-item">Hindi</a>
+								<a href="./categories/indian" class="nav_dropdown-item">Indian</a> 	
+								<a href="./categories/indo" class="nav_dropdown-item">Indonesian</a>
+									<a href="./categories/maid" class="nav_dropdown-item">Maid</a>
+									<a href="./categories/mms" class="nav_dropdown-item">MMS</a>
+									<a href="./categories/movie" class="nav_dropdown-item">Movie</a>
+									<a href="./categories/solo" class="nav_dropdown-item">Solo</a>
+									<a href="./categories/exclusive" class="nav_dropdown-item">Exclusive</a>
+
+								</div>
+							</div>
 						</li>
 						<li>
 							<a href="/html/profile" id="item4">ABOUT US</a>
@@ -180,7 +208,7 @@
 
 		<!--MAIN BODY VIDEO PLAYER-->
 		<div class="video-holder">
-			<iframe id="videoPlayer"  frameborder="1"  allowfullscreen ></iframe>
+			<iframe id="videoPlayer"  frameborder="1"  allowfullscreen  style="border: 2px solid orange; border-radius: 10px; padding: 10px;"></iframe>
 
 			<div class="vid-title">
 			  <h2 id="videoTitle"></h2>
@@ -449,27 +477,39 @@
 				localStorage.setItem("checked", JSON.stringify(arr));
 				location.reload();
 			}
-
+	
 			$(document).ready(function () {
 				let checked;
 				var arr = JSON.parse(localStorage.getItem('checked')) || [];
 				arr.forEach(function (checked, i) {
 					$('#checkbox').eq(i).prop('checked', checked);
 				});
-
+	
 				$("#checkbox").click(onClickBox);
-
+	
 				if (arr[0] == true) {
+					$('.header').css({ 'background': '#ffffff' });
+					$('body').css({ 'background': '#ffffff' });
+					$('.primary').css({ 'background': '#ffffff' });
+					$('.primary li a, .mobile-menu-auto a span').css({ 'color': '#000' });
 					$('.round').append('<span>black</span>');
+					$('.top-links-mobile').css('background', '#ffffff');
+					$('.member-links li a').css('color', '#000');
 					$('.container').css('background', '#ffffff');
 					$('#welcome').css('color', '#000000');
 					$('.headline h1').css('color', '#000000');
+					$('.nav_dropdown-item a').css('color', '#fffff');
+					$('.dropdown-content show a').css('background', '#ffffff');
+					$('.dropbtn').css({ 'background-color': '#ffffff' , 'color': '#000'});
+					$('#myDropdown a').css({'background':'#ffffff'});;
 					$('.list-videos .item').css({ 'background': '#ffffff', 'box-shadow': 'none' });
 					$('.added').css('color', '#000000');
 					$('.views').css('color', '#000000');
+					$('.container-switcher span').css('color', '#000000');
+					$('.main-container').css({ 'background-color': '#ffffff', 'border': '1px solid #000' });
 					$('.rating').css('color', '#000000');
 					$('.top-links').css('border-bottom', '1px solid #ffffff');
-					$('.header').css({ 'background': '#000000', 'border-bottom': '1px solid #ffffff' });
+					$('.header').css({ 'border-bottom': '1px solid #000' });
 					$('.header + nav').css({ 'background': '#000000' });
 					$('p.text').css('color', '#000000');
 					$('h2').css('color', '#000000');
@@ -477,9 +517,14 @@
 					$('.footer-texts').css('color', '#000000');
 					$('.tags-cloud .all').css('background', '#ffffff');
 					$('.block-video .video-holder').css({ 'background': '#000000', 'border-radius': 'unset' });
-
+	
 					$('.item .title').css('margin', '0px 4px 5px');
+					$('.vid-title').css({'background-color': '#ffffff' ,'color' :'#000', 'border': '1px solid black'});
+					$('.item p').css('background', 'orange');
+					$('.tabs-menu ul li ').css('color', 'orange');
+					$('.tabs-menu ul li a ').css('color', 'black');
 					$('.sidebar h2').css('color', '#ffffff');
+					$('#footer').css('background-color', '#ffffff');
 					$('.page').click(function () {
 						setTimeout(function () {
 							location.reload();
@@ -495,7 +540,7 @@
 							location.reload();
 						}, 550);
 					});
-
+	
 				} else {
 					$('.round').append('<span style="left: 20px;">white</span>');
 				}
@@ -507,7 +552,7 @@
 				$('.fancybox-inner').css('width', 'auto');
 			}
 			$(".fade-models, .list-albums .thumb").hide(0).delay(2000).fadeIn(2500)
-		</script>
+		</script
 
 		<script src="./js/jquery.autocomplete.min.js"></script>
 		<script>
