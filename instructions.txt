@@ -1,0 +1,24 @@
+\\INSTRUCTONS..
+
+1. FIRST UPLOAD VIDEO FILE TO MEGA STORAGE AND COPY THE EMBEDED LINK
+2. ADD Thumbnail image to THUMBNAIL FOLDER
+3. ADD PATH OF IMAGE AND EMBEDED URL TO THE FOLLOWING CODE
+
+	<div class="item" data-video-url="embeded url will go here" data-number="1">
+		<img src="/path/to/image" alt="Thumbnail">
+		<p> add video title here </p>
+	</div>
+
+4. MAKE SURE YOU PUT data-number=" " after embeded url , number should be different for each video in ascending order starting from 1...
+ so that the sort fuction will work (lastest, oldest video).
+	**ON click of video, video will automatically play in first.html page and also the title will be passed to this page, so no need to code first.html page
+
+5. FOLLOW ABOVE INSTRUCTION FOR EACH VIDEO
+
+#BY The Manager of Dhirajhub - Krushnal09
+
+Instagram- https://www.instagram.com/krushnal_09/
+FAcebook- https://www.facebook.com/Krushnal.patil.37625
+Twitter- https://www.twitter.com/krushnal_09?=08
+Github- https://github.com/Krushnal09
+Linkedin- https://www.linkedin.com/in/krushnalpatil09
